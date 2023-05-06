@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pivot Element In Simplex Method - QnA</title>
+    <meta name="description" content="Pivot Element In Simplex Method, , , , , , , 0, PPT - Chapter 6 Linear Programming: The Simplex Method PowerPoint, www.slideserve.com, 1024 x 768, jpeg, , 20, pivot-element-in-simplex-method, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pivot Element In Simplex Method - QnA" />
+    <meta property="og:description" content="Pivot Element In Simplex Method, , , , , , , 0, PPT - Chapter 6 Linear Programming: The Simplex Method PowerPoint, www.slideserve.com, 1024 x 768, jpeg, , 20, pivot-element-in-simplex-method, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pivot Element In Simplex Method - QnA" />
+    <meta name="twitter:description" content="Pivot Element In Simplex Method, , , , , , , 0, PPT - Chapter 6 Linear Programming: The Simplex Method PowerPoint, www.slideserve.com, 1024 x 768, jpeg, , 20, pivot-element-in-simplex-method, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://studyph.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://studyph.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://studyph.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://studyph.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://studyph.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://studyph.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://studyph.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://studyph.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Pivot Element In Simplex Method</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">quijotejenny2</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Pivot+Element+In+Simplex+Method" alt="Pivot Element In Simplex Method">
+                    </div>
+                    <p></p>
+                    <p>What is Simplex Method? ​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-simplex-method-%e2%80%8b">1.
+                                            What is Simplex Method? ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#why-is-dantzigs-method-called-simplex-method">2.
+                                            Why is dantzig's method called simplex method?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#graphical-vs-simplex-method%e2%80%8b">3.
+                                            Graphical vs  simplex method​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#it-was-developed-to-help-solve-large-real-world-linear-programming-problems-select-onea-optimal-production-policyb-tableausc-corner-point-principled-simplex-methodi-brainliest-ko-yung-maay">4.
+                                            it was developed to help solve large, real world linear programming problems.
+Select one:
+a.
+Optimal Production Policy
+b.
+Tableaus
+c.
+Corner Point Principle
+d.
+Simplex Method
+i brainliest ko yung maayos na sagot</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-method-is-used-for-computing-a-basic-feasible-solution-to-a-transportation-problemselect-onea-simplex-methodb-tableausc-northwest-corner-ruled-corner-point-principlei-brainliest-ko-yu">5.
+                                            What method is used for computing a basic feasible solution to a transportation problem?
+Select one:
+a.
+Simplex Method
+b.
+Tableaus
+c.
+Northwest Corner Rule
+d.
+Corner Point Principle
+i brainliest ko yung maayos na sagot</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-of-the-following-is-not-a-step-that-is-necessary-to-prepare-a-linear-programming-problem-for-solution-using-the-simplex-method">6.
+                                            Which of the following is not a step that is necessary to prepare a linear programming problem for solution using the simplex method?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#it-is-a-principle-that-gives-an-optimal-number-of-each-product-to-produce-where-it-is-possible-to-produce-this-number-of-products-gives-yields-maximum-profit-select-onea-optimal-production">7.
+                                            It is a principle that gives an optimal number of each product to produce where: It is possible to produce this number of products &amp; gives yields maximum profit.
+Select one:
+a.
+Optimal Production Policy
+b.
+Simplex Method
+c.
+Northwest Corner Algorithm
+d.
+Tableaus
+i brainliest ko yung maayos na sagot</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#simplex-methods-z-7x%e2%82%81-4x%e2%82%82%e2%80%8b">8.
+                                            simplex methods z = 7x₁ + 4x₂​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#how-do-you-get-herpes-simplex-virus%e2%80%8b">9.
+                                            how do you get herpes simplex virus​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#can-my-answer-different-between-linear-programming-and-simplex-method%e2%80%8b">10.
+                                            can my answer different between linear programming and simplex method?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#it-is-a-principle-that-gives-an-optimal-number-of-each-product-to-produce-where-it-is-possible-to-produce-this-number-of-products-gives-yields-maximum-profit-select-onea-northwest-corner-al">11.
+                                            It is a principle that gives an optimal number of each product to produce where: It is possible to produce this number of products &amp; gives yields maximum profit.
+Select one:
+a.
+Northwest Corner Algorithm
+b.
+Optimal Production Policy
+c.
+Simplex Method
+d.
+Tableaus</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#which-statement-concerning-the-the-pivot-is-untruea-it-is-an-offensive-maneuverb-it-is-a-deffensive-maneuverc-it-is-a-method-of-evading-an-opponentd-it-is-executed-by-lifting-both-feet-from-the-f">12.
+                                            Which statement concerning the the pivot is untrue?A. It is an offensive maneuverB. It is a deffensive maneuverC. It is a method of evading an opponentD. It is executed by lifting both feet from the floor​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#if-constraints-have-a-less-than-equal-to-sign-____________-variables-should-be-used-to-apply-the-simplex-method">13.
+                                            If constraints have a less than equal to sign, ____________ variables should be used to apply the simplex method.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#learning-task-5-identify-the-method-of-separating-mixtures-in-thegiven-pictures-below-1-4-2-5-3-pivot-4a-calabarzonwhat-is-method%e2%80%8b">14.
+                                            Learning Task 5: Identify the method of separating mixtures in thegiven pictures below.1.4.2.5.3.PIVOT 4A CALABARZONwhat is method​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#learning-task-5-identify-the-method-of-separating-mixtures-in-thegiven-pictures-below-1-02-5-3-pivot-4a-calabarz%e2%80%8b">15.
+                                            Learning Task 5: Identify the method of separating mixtures in thegiven pictures below.1.02.5.3.PIVOT 4A CALABARZ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-simplex-spinal-reflex-elicited-by-stimulating-a-stretch-receptor">16.
+                                            A simplex spinal reflex elicited by stimulating a stretch receptor</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#an-8-pole-dc-machine-has-a-simplex-wave-wound-armature-with-a-current-rating-of-110-amperes-determine-the-current-per-path">17.
+                                            An 8-pole dc machine has a simplex wave-wound armature with a current rating of 110 amperes. determine the current per path.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-simplex-melody%e2%80%8b">18.
+                                            what is simplex melody​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-herpes-simplex-occurs-around-the-vagina-true-or-false">19.
+                                            1. herpes simplex occurs around the vagina 
+ True or false</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#it-plays-a-pivotal-role-in-creating-a-seamless-visual-connection-with-the-design-elements-%e2%80%8b">20.
+                                            It plays a pivotal role in creating a seamless visual connection with the design elements.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#how-many-parallel-paths-there-will-be-in-the-armature-of-a-10-pole-machine-if-the-armature-is-simplex-lap-wound">21.
+                                            How many parallel paths there will be in the armature of a 10-pole machine if the armature is simplex lap wound?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#simplex-method-minimization-problema-company-wishes-to-minimize-cost-of-production-represented-by-cost-22x1-33x2-11x3-subject-to-the-following-constraints-2x1-2x2-%e2%89%a5-20-x1-x3">22.
+                                            Simplex Method - Minimization problem
+A company wishes to minimize cost of production represented by cost = 22x1 + 33x2 + 11x3, subject to the following constraints:
+ 2x1 + 2x2 ≥ 20
+ x1 + x3 ≥ 15
+ x1 + x2 + x3 ≥ 20
+ x1, x2, x3 ≥ 0
+How many units of x1, x2 and x3 should be produced?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#compoundcarbonmixturessymbolspurecarbon-dioxidecannot-be-separated-by-physical-or-chemicalmeans-2-elements-are-abbreviated-withwhich-consist-ofone-or-two11-elementshealthpivot-4a-calabarzon19">23.
+                                            CompoundCarbonmixturesSymbolsPureCarbon dioxidecannot be separated by physical or chemicalmeans.2. Elements are abbreviated withwhich consist ofone or two11. ElementsHealthPIVOT 4A CALABARZON19​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#simplex-method-minimizationminc-5x-8ysubject-to3x-4y-%e2%89%a4-150x-2y-%e2%89%a4-60-x-%e2%89%a5-25">24.
+                                            Simplex Method (Minimization)
+MinC = 5X + 8Y
+Subject to:
+3X + 4Y ≤ 150
+X + 2Y ≤ 60
+ X ≥ 25</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#3-which-type-of-elements-are-likely-to-have-no-electrical-charge-at-allpivot-4a-calabarzo17%e2%80%8b">25.
+                                            3. Which type of elements are likely to have no electrical charge at all?PIVOT 4A CALABARZO17​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#it-refers-to-the-maximal-value-for-profit-that-always-corresponds-to-a-corner-point-on-feasible-regionselect-onea-feasible-regionb-corner-point-principlec-simplex-methodd-northwest-corner-al">26.
+                                            It refers to the maximal value for profit that always corresponds to a corner point on feasible region
+Select one:
+a.
+Feasible Region
+b.
+Corner Point Principle
+c.
+Simplex Method
+d.
+Northwest Corner Algorithmi brainliest ko yung maayos na sagot</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#3-which-type-of-elements-are-likely-to-have-no-electrical-charge-at-allpivot-4a-calae%e2%80%8b">27.
+                                            3. Which type of elements are likely to have no electrical charge at all?PIVOT 4A CALAE​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#it-is-the-most-common-sexually-transmitted-infection-in-united-statesa-herpes-simplex-virushuman-papillomavirusb-gonorrhead-chancroid%e2%80%8b">28.
+                                            It is the most common sexually transmitted infection in United States,a. Herpes Simplex VirusHuman Papillomavirusb. Gonorrhead. Chancroid​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#15-which-data-communication-method-is-used-to-transmit-the-data-over-a-serial-communication-link-tenance-a-simplex-b-half-duplex-c-full-duplex-d-all-of-the-above%e2%80%8b">29.
+                                            15. Which data communication method is used to transmit the data over a serial communication link? tenance a. Simplex b. Half-duplex c. Full duplex d. all of the above​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#to-solve-a-linear-programming-model-using-the-simplex-method-the-following-steps-are-necessary%e2%80%8b">30.
+                                            To solve a linear programming model using the Simplex method the following steps are necessary:​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="what-is-simplex-method-%e2%80%8b">
+                            1. What is Simplex Method? ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>The Simplex Method or Simplex Algorithm is used for calculating the optimal solution to the linear programming problem. In other words, the simplex algorithm is an iterative procedure carried systematically to determine the optimal solution from the set of feasible solutions.</p><p></p><p></p><p><strong>Answer:</strong></p><p>a standard method of maximizing a linear function of several variables under several constraints on other linear functions.</p><br />
+                                            <h2 class="ez-toc-section" id="why-is-dantzigs-method-called-simplex-method">
+                            2. Why is dantzig's method called simplex method?</h2><br />
+                        <p><strong>Explanation:</strong></p><p>correct me if I'm wrong but hope it helps #carryonlearning</p><br />
+                                            <h2 class="ez-toc-section" id="graphical-vs-simplex-method%e2%80%8b">
+                            3. Graphical vs  simplex method​</h2><br />
+                        <p><strong>Answer:</strong></p><p> fight! fight! fight! fight!</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="it-was-developed-to-help-solve-large-real-world-linear-programming-problems-select-onea-optimal-production-policyb-tableausc-corner-point-principled-simplex-methodi-brainliest-ko-yung-maay">
+                            4. it was developed to help solve large, real world linear programming problems.
+Select one:
+a.
+Optimal Production Policy
+b.
+Tableaus
+c.
+Corner Point Principle
+d.
+Simplex Method
+i brainliest ko yung maayos na sagot</h2><br />
+                        <p><strong>Answer:</strong></p><p>D. SIMPLEX METHOD</p><p><strong>Step-by-step explanation:</strong></p><p><strong>HOPE THIS HELPS</strong></p><p><strong></strong></p><p><strong></strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="what-method-is-used-for-computing-a-basic-feasible-solution-to-a-transportation-problemselect-onea-simplex-methodb-tableausc-northwest-corner-ruled-corner-point-principlei-brainliest-ko-yu">
+                            5. What method is used for computing a basic feasible solution to a transportation problem?
+Select one:
+a.
+Simplex Method
+b.
+Tableaus
+c.
+Northwest Corner Rule
+d.
+Corner Point Principle
+i brainliest ko yung maayos na sagot</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. A. Simplex method </p><p><strong>Step-by-step explanation:</strong></p><p>If am wrong </p><p></p><p><strong>Answer:</strong></p><p>A. Simplex method </p><p><strong>Step-by-step explanation:</strong></p><p>Simplex method  im not sure hehe </p><br />
+                                            <h2 class="ez-toc-section" id="which-of-the-following-is-not-a-step-that-is-necessary-to-prepare-a-linear-programming-problem-for-solution-using-the-simplex-method">
+                            6. Which of the following is not a step that is necessary to prepare a linear programming problem for solution using the simplex method?</h2><br />
+                        <p><strong>Answer:</strong></p><p>where's the problem?</p><p><strong>Explanation:</strong></p><p> or given situation?</p><br />
+                                            <h2 class="ez-toc-section" id="it-is-a-principle-that-gives-an-optimal-number-of-each-product-to-produce-where-it-is-possible-to-produce-this-number-of-products-gives-yields-maximum-profit-select-onea-optimal-production">
+                            7. It is a principle that gives an optimal number of each product to produce where: It is possible to produce this number of products &amp; gives yields maximum profit.
+Select one:
+a.
+Optimal Production Policy
+b.
+Simplex Method
+c.
+Northwest Corner Algorithm
+d.
+Tableaus
+i brainliest ko yung maayos na sagot</h2><br />
+                        <p><strong>Answer:</strong></p><p>A</p><p><strong>Step-by-step explanation:</strong></p><p>hope it helps pa brainliest nalang po</p><br />
+                                            <h2 class="ez-toc-section" id="simplex-methods-z-7x%e2%82%81-4x%e2%82%82%e2%80%8b">
+                            8. simplex methods z = 7x₁ + 4x₂​</h2><br />
+                        <p>oOkehh kayo lame kayo 69 possition</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="how-do-you-get-herpes-simplex-virus%e2%80%8b">
+                            9. how do you get herpes simplex virus​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Why?? oh you mean when to know when you have herpes simplex virus ohhh hehe.</p><p>Transmission. HSV-1 is mainly transmitted by oral-to-oral contact to cause oral herpes infection, via contact with the HSV-1 virus in sores, saliva, and surfaces in or around the mouth. However, HSV-1 can also be transmitted to the genital area through oral-genital contact to cause genital herpes.</p><p>Credits to GGL</p><p><strong>#CarryOnLearning</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="can-my-answer-different-between-linear-programming-and-simplex-method%e2%80%8b">
+                            10. can my answer different between linear programming and simplex method?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Graphical method can be applied in 2D. In 3D+, identifying an optimal solution using the graphical method is no longer feasible.</p><p></p><p>Simplex can be applied to 1D, 2D, 3D and 3D+ linear programs. In other words, simplex method can be used for theoretically unlimited amounts of optimization variables.</p><br />
+                                            <h2 class="ez-toc-section" id="it-is-a-principle-that-gives-an-optimal-number-of-each-product-to-produce-where-it-is-possible-to-produce-this-number-of-products-gives-yields-maximum-profit-select-onea-northwest-corner-al">
+                            11. It is a principle that gives an optimal number of each product to produce where: It is possible to produce this number of products &amp; gives yields maximum profit.
+Select one:
+a.
+Northwest Corner Algorithm
+b.
+Optimal Production Policy
+c.
+Simplex Method
+d.
+Tableaus</h2><br />
+                        <p><strong>Answer:</strong></p><p>ba.northwest corner algorithm</p><br />
+                                            <h2 class="ez-toc-section" id="which-statement-concerning-the-the-pivot-is-untruea-it-is-an-offensive-maneuverb-it-is-a-deffensive-maneuverc-it-is-a-method-of-evading-an-opponentd-it-is-executed-by-lifting-both-feet-from-the-f">
+                            12. Which statement concerning the the pivot is untrue?A. It is an offensive maneuverB. It is a deffensive maneuverC. It is a method of evading an opponentD. It is executed by lifting both feet from the floor​</h2><br />
+                        <p><strong>Answer:</strong></p><p>D</p><p><strong>Explanation:</strong></p><p>it executed by lifing both feet from the floor</p><br />
+                                            <h2 class="ez-toc-section" id="if-constraints-have-a-less-than-equal-to-sign-____________-variables-should-be-used-to-apply-the-simplex-method">
+                            13. If constraints have a less than equal to sign, ____________ variables should be used to apply the simplex method.</h2><br />
+                        <p>If <strong>constraints </strong>have a less than equal to sign, <strong>slack </strong>variables should be used to apply the <strong>simplex method</strong>.</p><p></p><p>The simplex approach is used to solve problems in <strong>linear programming</strong>. It checks the feasible set's nearby vertices in order to confirm that the goal function rises or remained constant at each additional point.</p><p></p><p>Phase-I of the solution involves the process of removing artificial variables, while phase-II is employed to obtain an optimal solution. Because the LPP solution is computed in two phases, it is known as the <strong>Two-Phase</strong> Simplex Method.</p><p></p><p>If a constraint has a less than <strong>equal </strong>to sign, it signifies that the variable's value must be less than or equal to the constraint's value.</p><p></p><p></p><p>Learn more about <strong>linear programming</strong> https://brainly.ph/question/1659662</p><p></p><p>#SPJ4</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="learning-task-5-identify-the-method-of-separating-mixtures-in-thegiven-pictures-below-1-4-2-5-3-pivot-4a-calabarzonwhat-is-method%e2%80%8b">
+                            14. Learning Task 5: Identify the method of separating mixtures in thegiven pictures below.1.4.2.5.3.PIVOT 4A CALABARZONwhat is method​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1manual separation</p><p><strong>Explanation:</strong></p><p>2. magnetation</p><p>3.dissolving</p><p>4. Filtration</p><p>5evaporation</p><br />
+                                            <h2 class="ez-toc-section" id="learning-task-5-identify-the-method-of-separating-mixtures-in-thegiven-pictures-below-1-02-5-3-pivot-4a-calabarz%e2%80%8b">
+                            15. Learning Task 5: Identify the method of separating mixtures in thegiven pictures below.1.02.5.3.PIVOT 4A CALABARZ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. Evaporation</p><p>2. Filtration </p><p>3. Use of magnet</p><p>4. Decantation </p><p>5. Sieving</p><p></p><p><strong>Explanation:</strong></p><p><strong> </strong><strong>that's </strong><strong>the </strong><strong>answer</strong><strong>!</strong><strong> </strong><strong>nasagutan </strong><strong>ko </strong><strong>na </strong><strong>kasi </strong><strong>yan</strong><strong>.</strong><strong>.</strong><strong>.</strong></p><p></p><p></p><p></p><p></p><p></p><p><strong>follow </strong><strong>me </strong><strong>for </strong><strong>moreeeee;</strong><strong>) </strong></p><br />
+                                            <h2 class="ez-toc-section" id="a-simplex-spinal-reflex-elicited-by-stimulating-a-stretch-receptor">
+                            16. A simplex spinal reflex elicited by stimulating a stretch receptor</h2><br />
+                        <p><strong>Answer:</strong></p><p>A simplex spinal reflex is elicited by stimulating a stretch receptor. Vestibular reflex Withdrawal reflex Pupillary. Arrange the components of the reflex arc.</p><p><strong></strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="an-8-pole-dc-machine-has-a-simplex-wave-wound-armature-with-a-current-rating-of-110-amperes-determine-the-current-per-path">
+                            17. An 8-pole dc machine has a simplex wave-wound armature with a current rating of 110 amperes. determine the current per path.</h2><br />
+                        <p><strong>Answer:</strong></p><p>i don't know po sorry po tlg</p><br />
+                                            <h2 class="ez-toc-section" id="what-is-simplex-melody%e2%80%8b">
+                            18. what is simplex melody​</h2><br />
+                        <p><strong>Answer:</strong></p><p>melody is a first yaya hes meriad a glen</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="1-herpes-simplex-occurs-around-the-vagina-true-or-false">
+                            19. 1. herpes simplex occurs around the vagina 
+ True or false</h2><br />
+                        <p><strong>Answer:</strong></p><p>True</p><p><strong>Explanation:</strong></p><p>When signs and symptoms are present, they consist of: Typically painful fluid-filled blisters (that may appear like "pimples") around the vaginal area. Blisters around the vagina, anus, or buttocks. Ulcer formation after the blisters break open.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="it-plays-a-pivotal-role-in-creating-a-seamless-visual-connection-with-the-design-elements-%e2%80%8b">
+                            20. It plays a pivotal role in creating a seamless visual connection with the design elements.​</h2><br />
+                        <p>Alignment plays a pivotal role in creating a seamless visual connection with the design elements. It gives an ordered appearance to images, shapes, and blocks of texts by eliminating elements placed in a dishevelled manner. </p><p><strong>Explanation:</strong></p><p>hope it helps</p><p><strong>Answer:</strong></p><p>Alignment</p><p><strong>Explanation:</strong></p><p>Alignment plays a pivotal role in creating a seamless visual connection with the design elements. It gives an ordered appearance to images, shapes, and blocks of texts by eliminating elements placed in a dishevelled manner. The text, shape and image have been lined up in the middle, creating an 'Alignment.</p><p></p><p><strong>hope it helps</strong></p><p><strong>mark mi as an birainlis</strong></p><br />
+                                            <h2 class="ez-toc-section" id="how-many-parallel-paths-there-will-be-in-the-armature-of-a-10-pole-machine-if-the-armature-is-simplex-lap-wound">
+                            21. How many parallel paths there will be in the armature of a 10-pole machine if the armature is simplex lap wound?</h2><br />
+                        <p><strong>Answer:</strong></p><p>Before going on to examine the characteristics of the dc motor and dc generator in detail, we will look at how these machines are constructed. The purpose of this section is merely to acquaint you with the important parts of the dc machine and their purpose.</p><p></p><p>3-1 ARMATURE</p><p></p><p>Earlier you were introduced to the principles of voltage and torque generation. In the case of voltage generation we saw that a coil had to rotate in a magnetic field. In the case of torque generation we saw that a current had to flow through a coil that was free to rotate in a magnetic filed. In dc machines, the part on which this coil is mounted is called the armature. The rotating part of a machine is also called the rotor. Therefore, when we talk about a dc machine, the armature and rotor both refer to the same part.</p><p></p><p>The armature is made up of a shaft on which a core of laminated disks is mounted. The disks are made of a steel alloy. The purpose of the laminated disk construction is to reduce a phenomenon called eddy currents. Eddy currents are discussed in Section 4. Figr. 3-1 is a picture of a typical armature. The coil of wire making up the armature winding is wrapped around the armature and embedded into slots. The slots can be seen in Figr. 3-1. Normally, there are several coils mounted on an armature. The way in which these coils are interconnected is discussed in Section 3-6.</p><p></p><p></p><p><strong>Explanation:</strong></p><p>Pa brainliest ako </p><br />
+                                            <h2 class="ez-toc-section" id="simplex-method-minimization-problema-company-wishes-to-minimize-cost-of-production-represented-by-cost-22x1-33x2-11x3-subject-to-the-following-constraints-2x1-2x2-%e2%89%a5-20-x1-x3">
+                            22. Simplex Method - Minimization problem
+A company wishes to minimize cost of production represented by cost = 22x1 + 33x2 + 11x3, subject to the following constraints:
+ 2x1 + 2x2 ≥ 20
+ x1 + x3 ≥ 15
+ x1 + x2 + x3 ≥ 20
+ x1, x2, x3 ≥ 0
+How many units of x1, x2 and x3 should be produced?</h2><br />
+                        <p><strong>Step-by-step explanation:</strong></p><p>Set up the problem Write a matrix whose rows represent each constraint with the objective function as its bottom row. </p><br />
+                                            <h2 class="ez-toc-section" id="compoundcarbonmixturessymbolspurecarbon-dioxidecannot-be-separated-by-physical-or-chemicalmeans-2-elements-are-abbreviated-withwhich-consist-ofone-or-two11-elementshealthpivot-4a-calabarzon19">
+                            23. CompoundCarbonmixturesSymbolsPureCarbon dioxidecannot be separated by physical or chemicalmeans.2. Elements are abbreviated withwhich consist ofone or two11. ElementsHealthPIVOT 4A CALABARZON19​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Because atoms cannot be created or destroyed in a chemical reaction, elements ... Each element is represented by a unique symbol. ... Thus, water is H2O and carbon dioxide is CO2n</p><p></p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="simplex-method-minimizationminc-5x-8ysubject-to3x-4y-%e2%89%a4-150x-2y-%e2%89%a4-60-x-%e2%89%a5-25">
+                            24. Simplex Method (Minimization)
+MinC = 5X + 8Y
+Subject to:
+3X + 4Y ≤ 150
+X + 2Y ≤ 60
+ X ≥ 25</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p><strong>Step-by-step explanation:</strong></p><p>In this section, we will solve the standard linear programming minimization problems using the simplex method. Once again, we remind the reader that in the standard minimization problems all constraints are of the form  ax+by≥c .</p><p></p><p>The procedure to solve these problems was developed by Dr. John Von Neuman. It involves solving an associated problem called the dual problem. To every minimization problem there corresponds a dual problem. The solution of the dual problem is used to find the solution of the original problem. The dual problem is a maximization problem, which we learned to solve in the last section. We first solve the dual problem by the simplex method.</p><p></p><p>From the final simplex tableau, we then extract the solution to the original minimization problem.</p><p></p><p>Before we go any further, however, we first learn to convert a minimization problem into its corresponding maximization problem called its dual.</p><p></p><p>Example  4.3.1 </p><p>Convert the following minimization problem into its dual.</p><p></p><p> Minimize  Subject to: Z=12x1+16x2x1+2x2≥40x1+x2≥30x1≥0;x2≥0</p><p> </p><p>Solution</p><p></p><p>To achieve our goal, we first express our problem as the following matrix.</p><p></p><p>1112211640300</p><p> </p><p>Observe that this table looks like an initial simplex tableau without the slack variables. Next, we write a matrix whose columns are the rows of this matrix, and the rows are the columns. Such a matrix is called a transpose of the original matrix. We get:</p><p></p><p>1240113012160</p><p> </p><p>The following maximization problem associated with the above matrix is called its dual.</p><p></p><p> Maximize  Subject to: Z=40y1+30y2y1+y2≤122y1+y2≤16y1≥0;y2≥0</p><p> </p><p>Note that we have chosen the variables as y's, instead of x's, to distinguish the two problems.</p><p></p><p>Example  4.3.2 </p><p>Solve graphically both the minimization problem and its dual maximization problem.</p><p></p><p>Solution</p><p></p><p>Our minimization problem is as follows.</p><p></p><p> Minimize  Subject to: Z=12x1+16x2x1+2x2≥40x1+x2≥30x1≥0;x2≥0</p><p> </p><p>We now graph the inequalities:</p><p></p><p>imageedit_3_7200556551.png</p><br />
+                                            <h2 class="ez-toc-section" id="3-which-type-of-elements-are-likely-to-have-no-electrical-charge-at-allpivot-4a-calabarzo17%e2%80%8b">
+                            25. 3. Which type of elements are likely to have no electrical charge at all?PIVOT 4A CALABARZO17​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Atom </p><p><strong>Explanation:</strong></p><p>Not really sure </p><br />
+                                            <h2 class="ez-toc-section" id="it-refers-to-the-maximal-value-for-profit-that-always-corresponds-to-a-corner-point-on-feasible-regionselect-onea-feasible-regionb-corner-point-principlec-simplex-methodd-northwest-corner-al">
+                            26. It refers to the maximal value for profit that always corresponds to a corner point on feasible region
+Select one:
+a.
+Feasible Region
+b.
+Corner Point Principle
+c.
+Simplex Method
+d.
+Northwest Corner Algorithmi brainliest ko yung maayos na sagot</h2><br />
+                        <p><strong>Answer:</strong></p><p>B.corner pointh principle</p><p></p><p></p><p>sana po naka tulong:&gt;</p><p><strong>Answer:</strong></p><p>A.feasible region </p><p><strong>Step-by-step explanation:</strong></p><p>A.feasible region</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="3-which-type-of-elements-are-likely-to-have-no-electrical-charge-at-allpivot-4a-calae%e2%80%8b">
+                            27. 3. Which type of elements are likely to have no electrical charge at all?PIVOT 4A CALAE​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Atoms of all elements - except for most atoms of hydrogen - have neutrons in their nucleus. Unlike protons and electrons, which are electrically charged, neutrons have no charge - they are electrically neutral.</p><br />
+                                            <h2 class="ez-toc-section" id="it-is-the-most-common-sexually-transmitted-infection-in-united-statesa-herpes-simplex-virushuman-papillomavirusb-gonorrhead-chancroid%e2%80%8b">
+                            28. It is the most common sexually transmitted infection in United States,a. Herpes Simplex VirusHuman Papillomavirusb. Gonorrhead. Chancroid​</h2><br />
+                        <p><strong>Answer:</strong></p>It is the most common sexually transmitted infection in United States. <p>[tex]\text\red{a. Herpes Simplex Virus} [/tex]</p><p>[tex]\text\green{c. Human Papillomavirus ✓ } [/tex]</p><p>[tex]\text\red{b. Gonorrhea} [/tex]</p><p>[tex]\text\red{d. Chancroid} [/tex]</p>The <strong>Human</strong><strong> </strong><strong>Papillomavirus</strong> is a common transmitted infection in United States. <p>_______________________</p><p>#CarryOnLearning</p><br />
+                                            <h2 class="ez-toc-section" id="15-which-data-communication-method-is-used-to-transmit-the-data-over-a-serial-communication-link-tenance-a-simplex-b-half-duplex-c-full-duplex-d-all-of-the-above%e2%80%8b">
+                            29. 15. Which data communication method is used to transmit the data over a serial communication link? tenance a. Simplex b. Half-duplex c. Full duplex d. all of the above​</h2><br />
+                        <p><strong>Answer:</strong></p><p>D.all if the above</p><p><strong>Explanation:</strong></p><p>Because all of that method can transmit data over a serial communication link</p><p></p><p>HOPE IT HELP</p><br />
+                                            <h2 class="ez-toc-section" id="to-solve-a-linear-programming-model-using-the-simplex-method-the-following-steps-are-necessary%e2%80%8b">
+                            30. To solve a linear programming model using the Simplex method the following steps are necessary:​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. Standard form.</p><p>2. Introducing slack variables.</p><p>3. Creating the tableau.</p><p>4. Pivot variables.</p><p>5. Creating a new tableau.</p><p>6. Checking for optimality.</p><p>7. Identify optimal values.</p><p><strong>Step-by-step explanation:</strong></p><p> BRAINLIEST PLEASE. THANKS!</p><p></p>ANSWER:<p></p>EXPLANATION:<p>sorry hindi ko po alam ehh</p><p>sayang po yung points</p><p>please don't report me</p><p></p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/ANol4Fp9hLs?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>english</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/rectangular-garden-with-triangular-pool.html">Rectangular Garden With Triangular Pool</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/the-minister-s-black-veil-symbolism.html">The Minister s Black Veil Symbolism</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/f-b-service-crew.html">F b Service Crew</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/tagalog-ng-history.html">Tagalog Ng History</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/theme-of-the-story-snow-white-and-the-seven-dwarfs.html">Theme Of The Story Snow White And The Seven Dwarfs</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/liquid-nitrogen-and-chlorine.html">Liquid Nitrogen And Chlorine</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/social-and-cultural-innovation-in-education.html">Social And Cultural Innovation In Education</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/strategic-human-resource-management-lecture-notes-ppt.html">Strategic Human Resource Management Lecture Notes Ppt</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/object-of-the-contract.html">Object Of The Contract</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/identifying-poetic-devices-worksheet.html">Identifying Poetic Devices Worksheet</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/tick-appropriate-boxes.html">Tick Appropriate Boxes</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/how-many-seconds-is-4-minutes.html">How Many Seconds Is 4 Minutes</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/rpm-meaning-in-psychology.html">Rpm Meaning In Psychology</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/birth-certificate-paper-size.html">Birth Certificate Paper Size</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/f2n-marketing-log-in.html">F2n Marketing Log In</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/coliseum-athens-greece.html">Coliseum Athens Greece</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/echo-clapping.html">Echo Clapping</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/225-3.html">225 3</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/conceptual-meaning-in-semantics-pdf.html">Conceptual Meaning In Semantics Pdf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/22-5-kg-to-lbs.html">22 5 Kg To Lbs</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://studyph.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://studyph.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://studyph.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://studyph.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://studyph.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/b4/f1/ef/b4f1ef8dfe59b7fa68754094cf6c8e0e.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

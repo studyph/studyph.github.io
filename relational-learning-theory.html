@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Relational Learning Theory - QnA</title>
+    <meta name="description" content="Relational Learning Theory, Relational Learning, , , , Cyrus Paolo Buenafe, 2022-02-22T08:30:06.000000Z, 20, Dinesh&#039;s Blog :::: Being Compiled ::::: Understanding Relational Algebra, dinesql.blogspot.com, 1039 x 760, png, , 20, relational-learning-theory, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Relational Learning Theory - QnA" />
+    <meta property="og:description" content="Relational Learning Theory, Relational Learning, , , , Cyrus Paolo Buenafe, 2022-02-22T08:30:06.000000Z, 20, Dinesh&#039;s Blog :::: Being Compiled ::::: Understanding Relational Algebra, dinesql.blogspot.com, 1039 x 760, png, , 20, relational-learning-theory, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Relational Learning Theory - QnA" />
+    <meta name="twitter:description" content="Relational Learning Theory, Relational Learning, , , , Cyrus Paolo Buenafe, 2022-02-22T08:30:06.000000Z, 20, Dinesh&#039;s Blog :::: Being Compiled ::::: Understanding Relational Algebra, dinesql.blogspot.com, 1039 x 760, png, , 20, relational-learning-theory, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://studyph.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://studyph.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://studyph.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://studyph.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://studyph.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://studyph.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://studyph.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://studyph.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Relational Learning Theory</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">cartillarhaze143</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Relational+Learning+Theory" alt="Relational Learning Theory">
+                    </div>
+                    <p></p>
+                    <p>how inductive learning is related to the constructivist theory of learning?​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#how-inductive-learning-is-related-to-the-constructivist-theory-of-learning%e2%80%8b">1.
+                                            how inductive learning is related to the constructivist theory of learning?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#explain-how-inductive-learning-is-related-to-the-constructivist-theory-of-learning">2.
+                                            Explain how inductive learning is related to the constructivist theory of learning</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#how-helpful-learning-the-theories-related-to-cyberbullying">3.
+                                            how helpful learning the theories related to cyberbullying</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#how-would-these-major-theories-of-learning-relate-to-concept-of-andragogy-%e2%80%8b">4.
+                                            How would these major theories of learning relate to concept of Andragogy.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#why-cognitive-learning-theory-related-to-the-effect-of-learning-strategies-to-the-academic-performance-of-the-students%e2%80%8b">5.
+                                            why cognitive learning theory related to the effect of learning strategies to the academic performance of the students?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#easy-level-instructions-read-each-item-carefully-write-true-if-the-statement-is-true-andfalse-if-the-statement-if-false-1-review-of-related-literature-is-one-of-the-major-activities-in-research-tha">6.
+                                            Easy Level Instructions. Read each item carefully. Write TRUE if the statement is true andFALSE if the statement if false.1. Review of Related Literature is one of the major activities in research that makes you examine orstudy again the concepts or ideas related to your research that people managed to publish in books, journals orother reading materials in the past.2. RRL is an important component of research regardless of the type of research.3. Examining of the written works related to your study is necessary.4. Finding out the connection of your study to the current conditions or situations in the world is thepurpose of RRL.5. Knowing more about theories or concepts underlying your research work and to learn from themwith respect to your own research study must be observed.6. To discover the relation of your research with the previous research studies is not totally important.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#answer-the-ff-questions-substantially-and-comprehensively-provide-a-brief-discussion-of-the-graphic-organizer-and-the-its-content-5-10-sentences-as-much-as-possible-be-creative-in-presenting-you">7.
+                                            Answer the ff. questions substantially and comprehensively: Provide a brief discussion of the graphic organizer and the its content. (5- 10 sentences) As much as possible be creative in presenting your ideas.1. What is ecology? How does it relate with the concept of socialization? 2. What is socialization? How does it relate to development and adaptation? 3. What are the key assumptions of Bronfenbrenner's ecological theory? 4. Explain different ecological contexts of development and describe how they are interrelated.5. Describe how useful the ecological theory is in understanding the role of the teacher and the community in learning of children in schools.PAKI ANSWER NAMAN PO PLSSS LANG PO TALAGA PLSS PO HUHUH THANK YOU​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#please-answer-this-thankyou-very-muchhh-write-anything-and-everything-you-learn-from-the-subject-matter-and-expectations-as-we-go-on-to-our-topics-on-theories-of-crime-causations-in-relation-to-bio">8.
+                                             PLEASE ANSWER THIS THANKYOU VERY MUCHHH . WRITE ANYTHING AND EVERYTHING YOU LEARN FROM THE SUBJECT MATTER AND EXPECTATIONS AS WE GO ON TO OUR TOPICS ON THEORIES OF CRIME CAUSATIONS IN RELATION TO BIOLOGICAL, PSYCHOLOGICAL AND SOCIOLOGICAL THEORIES. ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#alearning-task-5-identify-the-word-or-group-of-words-being-described-using-thesuggested-answers-below-evolutionorganizationmax-weberjapanesehuman-skillsscientific-management-theorytactical-managersge">9.
+                                            ALearning Task 5: Identify the word or group of words being described using thesuggested answers below.EvolutionOrganizationMax WeberJapaneseHuman SkillsScientific Management TheoryTactical ManagersGeneral Administrative Theory CEOHenry Mintzberg1. It is the theory authored by Frederick W. Taylor2. The one who applied TQM in manufacturing their products.3. The German sociologist who wrote about bureaucracy.4. This theory concentrates on the manager's functions and what makes upgood management practice.5. It is usually defined as slow stages of growth and development,6. Demands assigning task, setting side funds, and bringing harmonicrelations among co-workers.7.these enable managers in all levels to relate well with people.8.it also refers to middle levels managers.9.it refers to an individual engaged in management activities 10.according to him,managerial roles are classified into three types.11.example of this includes top level managers in a big organization .12.it refers to one ot the classification of managerial roles composed of leader,liaison,and figurehead.may mauulit daw po na sagot jan tnx.po sa mag sasagot​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#task-1-cite-two-research-studies-local-and-foreign-related-to-theories-of-learning-and-their-applications-to-teaching-and-learning-please-use-the-matrix-provided-below-and-answer-the-question-that">10.
+                                            Task 1: Cite two research studies (local and foreign) related to theories of learning and their applications to teaching and learning. Please use the matrix provided below and answer the question that follows. Please refer to the scoring rubric provided on the next page. esearch Title Research Author's Major Findings Implications to Teac Learning Process​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#applying-your-learning-of-the-concepts-of-politics-governance-and-government-and-you-as-a-citizen-who-is-a-member-of-the-political-body-which-is-the-philippines-choose-only-1-topic-position-paper">11.
+                                            applying your learning of the concepts of politics, governance, and government and you as a citizen who is a member of the political body which is the philippines, CHOOSE ONLY 1 TOPIC:  Position Paper Topic 1: Thomas Malthus Theory, The population is potentially exponential while the growth of food supply and other resources in linear." Position Paper Topic 2: The Present Philippine Congress reviving the death penalty on drug related cases and heinous crimes.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#directions-let-us-try-and-apply-our-knowledge-of-economics-to-one-significant-issue-we-encounter-daily-how-can-we-relate-going-to-a-grocery-store-when-buying-food-and-goods-to-what-we-have-learned-a">12.
+                                            Directions: Let us try and apply our knowledge of Economics to one significant issue we encounter daily. How can we relate going to a grocery store when buying food and goods to what we have learned about Economics? Use the table as a guide in your analysis. Choose one of these concepts of theories and discuss how this explains the regular buying of grocery items and other goods​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#c-practice-task-iii-fight-the-fake-the-corona-virus-continues-to-spread-and-so-does-fake-news-about-it-no-garlic-does-not-help-neither-does-alcohol-here-is-a-look-at-the-misinformation-making">13.
+                                            C. Practice Task III: FIGHT THE FAKE. The corona virus continues to spread, and so does fake news about it. No, garlic does not help. Neither does alcohol. Here is a look at the misinformation making the rounds and why you shouldn't believe a word of it.Take note of the important details for you to be able to answer the questions with the facts cited in the material.1 What idea is presented in the video?2 List down some of the false information related to Corona Virus and its possible treatments as presented in the video clip viewed Write your answer in the graphic organizer belowCoronavirus3. According from the clip, who benefits from the fake news related to this pande nie?4. Have you learned any conspiracy theory about Corona Virus? What was your reaction regarding this theory?5. What can you do to stop the spread of fake news especially in times of pare ?pahelp​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-idea-is-presented-in-the-video-list-down-some-of-the-false-information-related-to-corona-virus-and-treatments-as-presented-in-the-video-clip-viewed-write-your-answe-organizer-below-corona-viru">14.
+                                            What idea is presented in the video? List down some of the false information related to Corona Virus and treatments as presented in the video clip viewed. Write your answe organizer below. Corona virus 3. According from the clip, who benefits from the fake news related to # Have you learned any conspiracy theory about Corona Virus? Wha reaction regarding this theory? 5. What can you do to stop the spread of fake news especially in times​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#explain-or-discuss-maslows-hierarchy-of-needs-theory-which-you-have-learned-in-psychology-111-how-does-it-relate-to-this-story-how-much-land-does-a-man-need-give-a-short-paragraph-containing-100">15.
+                                            explain or discuss maslow's hierarchy of needs theory which you have learned in psychology 111. how does it relate to this story. (how much land does a man need) Give a short paragraph containing 100-200 words​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#reflect-on-the-different-learner-centered-theories-of-learning-as-to-how-they-relate-to-classroom-setting%e2%80%8b">16.
+                                            reflect on the different learner-centered theories of learning as to how they relate to classroom setting​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#how-do-you-relate-to-your-knowledge-of-social-learning-theory-by-albert-bandura-%e2%80%8b">17.
+                                            how do you relate to your knowledge of social learning theory by albert bandura ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#paki-answer-naman-po-plsss-lang-po-talaga-plss-po-huhuh-thank-you%e2%80%8banswer-the-ff-questions-substantially-and-comprehensively-provide-a-brief-discussion-of-the-graphic-organizer-and-the-its-co">18.
+                                            PAKI ANSWER NAMAN PO PLSSS LANG PO TALAGA PLSS PO HUHUH THANK YOU​Answer the ff. questions substantially and comprehensively: Provide a brief discussion of the graphic organizer and the its content. (5- 10 sentences) As much as possible be creative in presenting your ideas.1. What is ecology? How does it relate with the concept of socialization? 2. What is socialization? How does it relate to development and adaptation? 3. What are the key assumptions of Bronfenbrenner's ecological theory? 4. Explain different ecological contexts of development and describe how they are interrelated.5. Describe how useful the ecological theory is in understanding the role of the teacher and the community in learning of children in schools.PAKI ANSWER NAMAN PO PLSSS LANG PO TALAGA PLSS PO HUHUH THANK YOU​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-i-have-learned-an-academic-text-is-a-reading-material-that-provides-information-which-include-concepts-and-theories-that-are-related-to-the-specific-discipline-common-text-includes-introduction">19.
+                                            What I Have Learned An academic text is a reading material that provides information which include concepts and theories that are related to the specific discipline Common text includes Introduction, body, and conclusion on one hand, students who master academic language are more likely to be successful in academic and professional settings GETTING DEEPER Lesson What I want to say about the lessons What I found out:​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#please-help-heres-some-question-about-the-movie-the-theory-of-everything1-what-is-the-film-all-about2-how-is-the-film-connectedrelated-to-science3-what-did-you-learn-about-it4-how-can-y">20.
+                                            please help here's some question about the movie "The Theory of Everything"
+1. What is the film all about?
+2. How is the film connected/related to science?
+3. What did you learn about it?
+4. How can you apply what you have learned in your day to day life?
+thank you :&gt;</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#congrats-you-made-it-your-task-is-to-collect-all-your-written-works-and-performance-tasks-and-compile-it-into-aportfolio-assessmentratingssources-oflearningexperiences-relevantto-leaming-outcomesdemo">21.
+                                            CONGRATS, YOU MADE IT.Your task is to collect all your written works and performance tasks and compile it into aportfolio.AssessmentRatingsSources ofLearningExperiences relevantto leaming outcomesDemonstration ofLearningArtifactsEvidence ofLearningCompetenciesRUBRIC FOR PORTFOLIO-BASED ASSESSMENT01 Partially meetsexpectationsDoes not meetexpectationsDocumentation and descripbonof learning expenences relatedto course leaming outcomesare lacking or substantiallyinadequateReflectionon LearningAligned with courseleaming outcomesPresentationCompletenessand quality of theportfoliopresentationThe portfolio's materials andartifacts are not appropriateand/or adequate, and are notsupported by the presentationMasteringThe portfolio provides littleKnowledge &amp; Skills evidence of the student'sApplication ofLearningability to use knowledge andskills for the course's learningoutcomes in practiceThe portfolio provides little orno evidence of reflection toincrease learning aligned withthe course learning outcomesfor which credit is being soughtThe portfolio shows little or noevidence of learning bied tosound educational theoryAssembly instructions havenot been followed with criticalportfolio elements not included:the quality of written, visualand/or digital presentation doesnot meet postsecondarystandardsDocumentation and descriptionof learning experiencesrelated to course learningoutcomes are not effectivelyor completely presentedThe portolo materials andartifacts are not fullysupported by or connected tothe courses learning outcomesThe portfolio documents some.but not sufficient learning tiedto sound educational theory(or grounded in appropriateacademic frameworks!2 MeetsexpectationsDocumentation and descriptionof learning experiences relatedto course learning outcomesare appropriate and effectivelypresentedThe portfolio includesappropriate artifacts thatsupport the demonstrationof learning outcomesThe portfolio adequatelydocuments learning tied tosound educational theory (orgrounded in appropriateacademic frameworks!The portfolio demonstrates the The portfolio cocuments thestudent's ability to use theknowledge and skills for thecourse learning outcomes inpractice is limitedThe portfolio providesinadequate evidence ofreflection to increase learningaligned with the course learningoutcomes for which creat isbeing soughtMost of the expected elementsare included the quality ofwritten visual and/or digitalpresentation does not mee:postsecondary stancards withtoo many errors in spellinggrammar and punctuation3ExceedsexpectationsDocumentation anddescription of learningexpenerces related to courselearning outcomes exceedexpectationsThe presentation of artifacts isconvincing with strongsupport for the courseslearning outcomesacquisition of knowledge andskills for the course leamingoutcomes with some ability toapply them in practiceThe portfolio providesevidence of reflection toincrease learning algned withthe course learning outcomesfor which credit is being soughtThe portfolio provides clearevidence of learning bed tosound educational theory forgrounded in appropriateacademic frameworks!The portfolio demonstrates thestudent has mastered theknowledge and skills for thecourse learning outcomes andcan apply them in practiceThe portfolio shows that thestudent has reflected withsubstantial depth upon howthe prior learning experience'saligned to the course learningoutcomes for which credit isbeing soughtThe portfolio is well organizedwith all critical elementsScoreincluced the quality of writtenvisual and or digital thepresentation is competent withminor errors in spelling.grammar and punctuationThe portfolio is well organizedwith all critical elementsincluded learning is well-documented with anting andproduction skills that exceedthose of most college studentspasagot po kailangan ko na po kasi ngayon thank you sa masagot nito.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#learning-task-5-identify-the-word-or-group-of-words-being-described-using-thesuggested-answers-below-evolution-organization-max-weber-japanese-human-skills-scientific-management-theory-tacti">22.
+                                            Learning Task 5: Identify the word or group of words being described using thesuggested answers below.Evolution , Organization , Max Weber ,Japanese , Human Skills ,Scientific Management Theory ,Tactical Managers ,General Administrative Theory CEO ,Henry Mintzberg , Manager , Interpersnal1. It is the theory authored by Frederick W. Taylor2. The one who applied TQM in manufacturing their products.3. The German sociologist who wrote about bureaucracy.4. This theory concentrates on the manager's functions and what makes upgood management practice.5. It is usually defined as slow stages of growth and development,6. Demands assigning task, setting side funds, and bringing harmonicrelations among co-workers.7.these enable managers in all levels to relate well with people.8.it also refers to middle levels managers.9.it refers to an individual engaged in management activities 10.according to him,managerial roles are classified into three types.11.example of this includes top level managers in a big organization .12.it refers to one ot the classification of managerial roles composed of leader,liaison,and figurehead.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#in-what-way-do-you-think-that-the-implications-of-brain-theories-related-to-personality-and-learning%e2%80%8b">23.
+                                            in what way do you think that the implications of brain theories related to personality and learning?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#introductionlithosphere-consists-of-crust-and-the-upper-portion-of-the-mantle-there-are-two-types-of-crustthe-continental-crust-and-the-oceanic-crust-the-continental-crust-is-thicker-but-less-dense">24.
+                                            IntroductionLithosphere consists of crust and the upper portion of the mantle. There are two types of crust,the continental crust and the oceanic crust. The continental crust is thicker but less dense than theoceanic crust. Because of the difference in density, continental crust floats higher than the oceanic crust.The Earth is divided into segments called plates.There are seven relatively large plates and a number of smaller ones, including the Philippine plate.The plates move very slowly but constantly, and this movement is called tectonics; thus the theory ofmoving lithospheric plates is called plate tectonics. Earthquake is a vibration of the Earth due to therapid release of energy and it is the consequences of moving crustal plates which is crucial in studyingplate tectonics.Learning Competency1. Describe and relate the distribution of earthquake epicenters, active volcanoes and major mountain belto Plate Tectonic Theory.a. Describe and relate the distribution of earthquake epicenters to Plate Tectonic Theory.1​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#whats-more-activity-1-chunking-the-data-create-a-graphic-organizer-to-arrange-the-concepts-you-have-learned-from-this-module-by-topic-follow-the-table-headings-and-place-your-answers-in-the-corresp">25.
+                                            What's More Activity 1: CHUNKING THE DATA Create a graphic organizer to arrange the concepts you have learned from this module by topic. Follow the table headings and place your answers in the corresponding box, Description of key terms related to management Concepts related to the types of management Generalizations about a management theory Insights learned from a management value?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ii-learning-competency-with-code-the-learner-describe-and-relate-the-distribution-of-active-volcanoes-earthquake-epicenters-and-major-mountain-belts-to-plate-tectonic-theory-iii-exercises-activi">26.
+                                            II. Learning Competency with Code The learner Describe and relate the distribution of active volcanoes, earthquake epicenters, and major mountain belts to Plate Tectonic Theory III. Exercises / Activities Answer the following questions on a separate sheet of paper. 1. What is the cause of an earthquake? 2. How does a hypocenter differ from an epicenter? 3. How can we locate the epicenter of an earthquake? 4. What are the different measurements used to determine the magnitude of an earthquake? anwer:1.surface wave magnitude2.hypocenter or focus3.body wave4.surface of earthquake ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#paki-answer-naman-po-plsssss-po-talaga-maawa-po-kayo-huhuhu-wag-lang-po-e-copy-paste-sa-google-plsss-po-thankyou-in-your-on-opinion-po-plsss-huhuhuessay-word-limit-i1-what-is-ecology-how-does-it">27.
+                                            PAKI ANSWER NAMAN PO  PLSSSSS PO TALAGA MAAWA PO KAYO HUHUHU WAG LANG PO E COPY PASTE SA GOOGLE PLSSS PO THANKYOU IN YOUR ON OPINION PO PLSSS HUHUHUESSAY Word limit: I1 . What is ecology? How does it relate with the concept of socialization? 2. What is socialization? How does it relate to development and adaptation? 3. What are the key assumptions of Bronfenbrenner's ecological theory? 4. Describe the process of socialization in on ecological context 5. Describe how useful the ecological theory is in understanding the role of the teacher and the community in learning of children in schools (sopts)PAKI ANSWER NAMAN PO  PLSSSSS PO TALAGA MAAWA PO KAYO HUHUHU WAG LANG PO E COPY PASTE SA GOOGLE PLSSS PO THANKYOU IN YOUR ON OPINION PO PLSSS HUHUHU​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#you-have-studied-many-theories-related-to-evolution-today-remember-a-theory-is-a-group-of-ideas-intended-to-explain-something-from-all-that-you-have-learned-construct-your-own-theory-of-evolution">28.
+                                            You have studied many theories related to evolution today. Remember, a theory is a group of ideas intended to explain something. From all that you have learned, construct your own theory of evolution. How do you think organisms came about? Be sure to create a name for your theory and make it detailed as possible.Bs ko maka sagot ng tama at magamda Thanks​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-theories-explain-the-relation-of-learning-style-to-academic-achievement">29.
+                                            what theories explain the relation of learning style to academic achievement???</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-i-have-learned-an-academic-text-is-a-reading-material-that-provides-information-which-include-concepts-and-theories-that-are-related-to-the-specific-discipline-common-text-includes-introduction">30.
+                                            What I Have Learned An academic text is a reading material that provides information which include concepts and theories that are related to the specific discipline. Common text includes introduction, body, and conclusion. On one hand, students who master academic language are more likely to be successful in academic and professional settings, GETTING DEEPER! Lesson:_______________________________________________________________________________________________________________________What I want to say about the lesson: ___________________________________________________________________________________________________________________What I found out:__________________________________________________________________________________________________________________Pa help po​ </a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="how-inductive-learning-is-related-to-the-constructivist-theory-of-learning%e2%80%8b">
+                            1. how inductive learning is related to the constructivist theory of learning?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Constructivist learning is inductive. Constructivist learning dictates that the concepts follow the action rather than precede it. The activity leads to the concepts; the concepts do not lead to the activity. ... From the beginning, students engage in activities through which they develop skills and acquire concepts.</p><br />
+                                            <h2 class="ez-toc-section" id="explain-how-inductive-learning-is-related-to-the-constructivist-theory-of-learning">
+                            2. Explain how inductive learning is related to the constructivist theory of learning</h2><br />
+                        <p><strong>Answer:</strong></p><p>Constructivist learning is inductive. Constructivist learning dictates that the concepts follow the action rather than precede it. ... New learning builds on prior knowledge: In making an effort to make sense of information, students must make connections between old knowledge and new information.</p><p></p><p></p><p><strong>Step-by-step explanation:</strong></p><p>As people experience the world and reflect upon those experiences, they build their own representations and incorporate new information into their pre-existing knowledge (schemas).</p><br />
+                                            <h2 class="ez-toc-section" id="how-helpful-learning-the-theories-related-to-cyberbullying">
+                            3. how helpful learning the theories related to cyberbullying</h2><br />
+                        <p><strong>Answer:</strong></p><p>They view it as destructive. Which full of negativity and bad influences that cause them to harm themselves.
+</p><p>
+</p><p></p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="how-would-these-major-theories-of-learning-relate-to-concept-of-andragogy-%e2%80%8b">
+                            4. How would these major theories of learning relate to concept of Andragogy.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Andragogy means the art and science of teaching adults, as opposed to pedagogy, which is the art and science of teaching children.</p><p></p><p>Developed in 1968 by Malcolm Knowles.</p><p></p><p>Andragogy theory posits that the adult learner:</p><p></p><p>Is much better suited to direct their own learning than a child learner.</p><p>Uses their own knowledge base and life experience to aid in their learning.</p><p>Will be engaged, present, and ready to learn when the material is of immediate relevance, such as in a new job, social, or life role.</p><p>Wants to be able to apply new information immediately to solve problems in their life.</p><p>Needs to have a voice in both the planning and evaluation of their learning experience.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="why-cognitive-learning-theory-related-to-the-effect-of-learning-strategies-to-the-academic-performance-of-the-students%e2%80%8b">
+                            5. why cognitive learning theory related to the effect of learning strategies to the academic performance of the students?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>because it what to graduate college </p><p><strong>Answer:</strong></p><p></p><p>According to <strong>Cognitive Behavioral Theory</strong>, a person's thoughts, feelings, and actions impact how they learn. In other words, their thought patterns and mindset affect how they pick up and retain information.</p><p></p><p>( hope it helps)</p><br />
+                                            <h2 class="ez-toc-section" id="easy-level-instructions-read-each-item-carefully-write-true-if-the-statement-is-true-andfalse-if-the-statement-if-false-1-review-of-related-literature-is-one-of-the-major-activities-in-research-tha">
+                            6. Easy Level Instructions. Read each item carefully. Write TRUE if the statement is true andFALSE if the statement if false.1. Review of Related Literature is one of the major activities in research that makes you examine orstudy again the concepts or ideas related to your research that people managed to publish in books, journals orother reading materials in the past.2. RRL is an important component of research regardless of the type of research.3. Examining of the written works related to your study is necessary.4. Finding out the connection of your study to the current conditions or situations in the world is thepurpose of RRL.5. Knowing more about theories or concepts underlying your research work and to learn from themwith respect to your own research study must be observed.6. To discover the relation of your research with the previous research studies is not totally important.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1 true</p><p>2false</p><p>3false</p><p>4true</p><p>5false</p><p>6tru</p><br />
+                                            <h2 class="ez-toc-section" id="answer-the-ff-questions-substantially-and-comprehensively-provide-a-brief-discussion-of-the-graphic-organizer-and-the-its-content-5-10-sentences-as-much-as-possible-be-creative-in-presenting-you">
+                            7. Answer the ff. questions substantially and comprehensively: Provide a brief discussion of the graphic organizer and the its content. (5- 10 sentences) As much as possible be creative in presenting your ideas.1. What is ecology? How does it relate with the concept of socialization? 2. What is socialization? How does it relate to development and adaptation? 3. What are the key assumptions of Bronfenbrenner's ecological theory? 4. Explain different ecological contexts of development and describe how they are interrelated.5. Describe how useful the ecological theory is in understanding the role of the teacher and the community in learning of children in schools.PAKI ANSWER NAMAN PO PLSSS LANG PO TALAGA PLSS PO HUHUH THANK YOU​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1. Ecology is the study of how organisms interact with their environment. It relates to the concept of socialization because socialization involves the process of learning social norms and values, which are shaped by the environment in which a person grows up. The environment in which a person is socialized can have a significant impact on their beliefs, attitudes, and behavior.</p><p></p><p>2. Socialization refers to the process by which individuals learn the norms and values of their culture. It relates to development and adaptation because socialization helps individuals develop the skills and knowledge they need to function effectively in their social and cultural environment. Through socialization, individuals learn how to communicate, interact with others, and navigate social hierarchies.</p><p></p><p>3. The key assumptions of Bronfenbrenner's ecological theory are that development is shaped by the complex interplay between an individual's biology, environment, and cultural context, and that development occurs within multiple nested levels of influence. These levels include the microsystem (immediate environment), mesosystem (connections between microsystems), exosystem (indirect influences), and macrosystem (cultural context).</p><p></p><p>4. There are many different ecological contexts of development, including family, peer groups, schools, neighborhoods, and broader cultural contexts. These contexts are interrelated in that they influence each other and are influenced by broader cultural factors. For example, a child's experiences in their family may influence their experiences in school, and both of these contexts may be influenced by broader cultural norms and values.</p><p></p><p>5. The ecological theory is useful in understanding the role of the teacher and the community in the learning of children in schools because it emphasizes the importance of multiple levels of influence on development. Teachers and communities are part of the mesosystem and exosystem, respectively, and can have a significant impact on children's development and learning. By understanding the complex interplay between different levels of influence, educators can better support the development and learning of children in schools.</p><p></p><p></p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="please-answer-this-thankyou-very-muchhh-write-anything-and-everything-you-learn-from-the-subject-matter-and-expectations-as-we-go-on-to-our-topics-on-theories-of-crime-causations-in-relation-to-bio">
+                            8.  PLEASE ANSWER THIS THANKYOU VERY MUCHHH . WRITE ANYTHING AND EVERYTHING YOU LEARN FROM THE SUBJECT MATTER AND EXPECTATIONS AS WE GO ON TO OUR TOPICS ON THEORIES OF CRIME CAUSATIONS IN RELATION TO BIOLOGICAL, PSYCHOLOGICAL AND SOCIOLOGICAL THEORIES. ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>wala po akong nakita pink lang</p><br />
+                                            <h2 class="ez-toc-section" id="alearning-task-5-identify-the-word-or-group-of-words-being-described-using-thesuggested-answers-below-evolutionorganizationmax-weberjapanesehuman-skillsscientific-management-theorytactical-managersge">
+                            9. ALearning Task 5: Identify the word or group of words being described using thesuggested answers below.EvolutionOrganizationMax WeberJapaneseHuman SkillsScientific Management TheoryTactical ManagersGeneral Administrative Theory CEOHenry Mintzberg1. It is the theory authored by Frederick W. Taylor2. The one who applied TQM in manufacturing their products.3. The German sociologist who wrote about bureaucracy.4. This theory concentrates on the manager's functions and what makes upgood management practice.5. It is usually defined as slow stages of growth and development,6. Demands assigning task, setting side funds, and bringing harmonicrelations among co-workers.7.these enable managers in all levels to relate well with people.8.it also refers to middle levels managers.9.it refers to an individual engaged in management activities 10.according to him,managerial roles are classified into three types.11.example of this includes top level managers in a big organization .12.it refers to one ot the classification of managerial roles composed of leader,liaison,and figurehead.may mauulit daw po na sagot jan tnx.po sa mag sasagot​</h2><br />
+                        <p><strong>Explanation:</strong></p><p>patulong nmn po sa sagot</p><br />
+                                            <h2 class="ez-toc-section" id="task-1-cite-two-research-studies-local-and-foreign-related-to-theories-of-learning-and-their-applications-to-teaching-and-learning-please-use-the-matrix-provided-below-and-answer-the-question-that">
+                            10. Task 1: Cite two research studies (local and foreign) related to theories of learning and their applications to teaching and learning. Please use the matrix provided below and answer the question that follows. Please refer to the scoring rubric provided on the next page. esearch Title Research Author's Major Findings Implications to Teac Learning Process​</h2><br />
+                        <p><strong>Answer:</strong></p><p>bigyan moko idea h a h a h a</p><p></p><p><strong>Answer:</strong></p><p>what is the cardinality 10 20 30 I add ko be there in a few minutes and</p><br />
+                                            <h2 class="ez-toc-section" id="applying-your-learning-of-the-concepts-of-politics-governance-and-government-and-you-as-a-citizen-who-is-a-member-of-the-political-body-which-is-the-philippines-choose-only-1-topic-position-paper">
+                            11. applying your learning of the concepts of politics, governance, and government and you as a citizen who is a member of the political body which is the philippines, CHOOSE ONLY 1 TOPIC:  Position Paper Topic 1: Thomas Malthus Theory, The population is potentially exponential while the growth of food supply and other resources in linear." Position Paper Topic 2: The Present Philippine Congress reviving the death penalty on drug related cases and heinous crimes.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>2 she want to pre save to Denmark at sa thailand</p><br />
+                                            <h2 class="ez-toc-section" id="directions-let-us-try-and-apply-our-knowledge-of-economics-to-one-significant-issue-we-encounter-daily-how-can-we-relate-going-to-a-grocery-store-when-buying-food-and-goods-to-what-we-have-learned-a">
+                            12. Directions: Let us try and apply our knowledge of Economics to one significant issue we encounter daily. How can we relate going to a grocery store when buying food and goods to what we have learned about Economics? Use the table as a guide in your analysis. Choose one of these concepts of theories and discuss how this explains the regular buying of grocery items and other goods​</h2><br />
+                        <p><strong>Answer:</strong></p><p>the goggle will answer your question correctly</p><br />
+                                            <h2 class="ez-toc-section" id="c-practice-task-iii-fight-the-fake-the-corona-virus-continues-to-spread-and-so-does-fake-news-about-it-no-garlic-does-not-help-neither-does-alcohol-here-is-a-look-at-the-misinformation-making">
+                            13. C. Practice Task III: FIGHT THE FAKE. The corona virus continues to spread, and so does fake news about it. No, garlic does not help. Neither does alcohol. Here is a look at the misinformation making the rounds and why you shouldn't believe a word of it.Take note of the important details for you to be able to answer the questions with the facts cited in the material.1 What idea is presented in the video?2 List down some of the false information related to Corona Virus and its possible treatments as presented in the video clip viewed Write your answer in the graphic organizer belowCoronavirus3. According from the clip, who benefits from the fake news related to this pande nie?4. Have you learned any conspiracy theory about Corona Virus? What was your reaction regarding this theory?5. What can you do to stop the spread of fake news especially in times of pare ?pahelp​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1.the coronavirus continues to spread </p><p>2."dont get the vaccine</p><p>4.yes,it was shocking and i think all people are surprised about the news</p><p>5.i will tell all the people in the social media's to stop spreading fake news</p><p><strong>Explanation:</strong></p><p>Sana maka tulong no answer for number 3</p><br />
+                                            <h2 class="ez-toc-section" id="what-idea-is-presented-in-the-video-list-down-some-of-the-false-information-related-to-corona-virus-and-treatments-as-presented-in-the-video-clip-viewed-write-your-answe-organizer-below-corona-viru">
+                            14. What idea is presented in the video? List down some of the false information related to Corona Virus and treatments as presented in the video clip viewed. Write your answe organizer below. Corona virus 3. According from the clip, who benefits from the fake news related to # Have you learned any conspiracy theory about Corona Virus? Wha reaction regarding this theory? 5. What can you do to stop the spread of fake news especially in times​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Hindi kopo alam ung isasagot pero mas mabuti po na basahin and doon niyo makikita ung sagot.Gumamit po kayo ng quillbot para sa tamang grammar</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="explain-or-discuss-maslows-hierarchy-of-needs-theory-which-you-have-learned-in-psychology-111-how-does-it-relate-to-this-story-how-much-land-does-a-man-need-give-a-short-paragraph-containing-100">
+                            15. explain or discuss maslow's hierarchy of needs theory which you have learned in psychology 111. how does it relate to this story. (how much land does a man need) Give a short paragraph containing 100-200 words​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>`Maslow's hierarchy of needs is a theory of psychology explaining human motivation. ... The theory states that humans are motivated to fulfill their needs in a hierarchical order. This order begins with the most basic needs before moving on to more advanced needs.</strong></p><p><strong>Explanation:</strong></p><p><strong></strong></p><br />
+                                            <h2 class="ez-toc-section" id="reflect-on-the-different-learner-centered-theories-of-learning-as-to-how-they-relate-to-classroom-setting%e2%80%8b">
+                            16. reflect on the different learner-centered theories of learning as to how they relate to classroom setting​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Learning theory describes how students receive, process, and retain knowledge during learning. ... Educators who embrace cognitive theory believe that the definition of learning as a change in behaviour is too narrow, and study the learner rather than their environment—and in particular the complexities of human memory.</p><br />
+                                            <h2 class="ez-toc-section" id="how-do-you-relate-to-your-knowledge-of-social-learning-theory-by-albert-bandura-%e2%80%8b">
+                            17. how do you relate to your knowledge of social learning theory by albert bandura ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Bandura is known for his social learning theory. He is quite different from other learning theorists who look at learning as a direct result of conditioning, reinforcement, and punishment. Bandura asserts that most human behavior is learned through observation, imitation, and modeling.
+</p><p>
+</p><p></p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="paki-answer-naman-po-plsss-lang-po-talaga-plss-po-huhuh-thank-you%e2%80%8banswer-the-ff-questions-substantially-and-comprehensively-provide-a-brief-discussion-of-the-graphic-organizer-and-the-its-co">
+                            18. PAKI ANSWER NAMAN PO PLSSS LANG PO TALAGA PLSS PO HUHUH THANK YOU​Answer the ff. questions substantially and comprehensively: Provide a brief discussion of the graphic organizer and the its content. (5- 10 sentences) As much as possible be creative in presenting your ideas.1. What is ecology? How does it relate with the concept of socialization? 2. What is socialization? How does it relate to development and adaptation? 3. What are the key assumptions of Bronfenbrenner's ecological theory? 4. Explain different ecological contexts of development and describe how they are interrelated.5. Describe how useful the ecological theory is in understanding the role of the teacher and the community in learning of children in schools.PAKI ANSWER NAMAN PO PLSSS LANG PO TALAGA PLSS PO HUHUH THANK YOU​</h2><br />
+                        <p><strong>Answer:</strong></p><p>1)By living in diverse ecological conditions, inhabiting diverse ecological niches, certain animal species have developed different levels of sociality or different kinds of social organization, and therefore their processes of socialization may also differ.</p><p></p><p>2(<strong>Socialization is the learning process wherein we develop our personality through adapting another person`s culture.</strong></p><p></p><p><strong>3</strong><strong>(</strong><strong>Bronfenbrenner's ecological systems theory focuses on the quality and context of the child's environment. He states that as a child develops, the interaction within these environments becomes more complex. This complexity can arise as the child's physical and cognitive structures grow and mature</strong></p><p></p><p><strong>4</strong></p><p><strong>In Bronfenbrenner's ecological systems theory, a child's development is significantly impacted by the environment. In Bronfenbrenner's model, the environment is represented by a series of systems that directly or indirectly impact the child's development. Thus, a child's development is a factor of their biology and the environmental systems that surround them.</strong></p><p></p><p><strong>5</strong><strong>For teaching purposes, teachers can use the model to create personalized learning experiences for students. The systems support teachers and school administrators to develop school environments that are suitable to students' needs, characteristics, culture, and family background</strong></p><br />
+                                            <h2 class="ez-toc-section" id="what-i-have-learned-an-academic-text-is-a-reading-material-that-provides-information-which-include-concepts-and-theories-that-are-related-to-the-specific-discipline-common-text-includes-introduction">
+                            19. What I Have Learned An academic text is a reading material that provides information which include concepts and theories that are related to the specific discipline Common text includes Introduction, body, and conclusion on one hand, students who master academic language are more likely to be successful in academic and professional settings GETTING DEEPER Lesson What I want to say about the lessons What I found out:​</h2><br />
+                        <p><strong>Answer:</strong></p><p>    Academic writing allows an individual to think in an analytical way. It involves collecting and analysing information than communicating it in a manner that makes sense to the reader. The ability to analyze and report accurately is a skill which once learned, stays with you forever.</p><p>   The main point is that students learn to read for a purpose: to learn new information, determine the author's viewpoint, and process new ideas. Students can also see that academic writing has a clear pur- pose and audience, which reinforces writing instruction.</p><p><strong>Explanation:</strong></p>please correct me if I'm wrong<br />
+                                            <h2 class="ez-toc-section" id="please-help-heres-some-question-about-the-movie-the-theory-of-everything1-what-is-the-film-all-about2-how-is-the-film-connectedrelated-to-science3-what-did-you-learn-about-it4-how-can-y">
+                            20. please help here's some question about the movie "The Theory of Everything"
+1. What is the film all about?
+2. How is the film connected/related to science?
+3. What did you learn about it?
+4. How can you apply what you have learned in your day to day life?
+thank you :&gt;</h2><br />
+                        <p><strong>Explanation:</strong></p><p>c for two _letter symbols most of them start with first letter of the element , Notice that the second letter in the symbol may be any letter found in the element s name notice as well that only the first letter is capitalized for two,letter symbols </p><br />
+                                            <h2 class="ez-toc-section" id="congrats-you-made-it-your-task-is-to-collect-all-your-written-works-and-performance-tasks-and-compile-it-into-aportfolio-assessmentratingssources-oflearningexperiences-relevantto-leaming-outcomesdemo">
+                            21. CONGRATS, YOU MADE IT.Your task is to collect all your written works and performance tasks and compile it into aportfolio.AssessmentRatingsSources ofLearningExperiences relevantto leaming outcomesDemonstration ofLearningArtifactsEvidence ofLearningCompetenciesRUBRIC FOR PORTFOLIO-BASED ASSESSMENT01 Partially meetsexpectationsDoes not meetexpectationsDocumentation and descripbonof learning expenences relatedto course leaming outcomesare lacking or substantiallyinadequateReflectionon LearningAligned with courseleaming outcomesPresentationCompletenessand quality of theportfoliopresentationThe portfolio's materials andartifacts are not appropriateand/or adequate, and are notsupported by the presentationMasteringThe portfolio provides littleKnowledge &amp; Skills evidence of the student'sApplication ofLearningability to use knowledge andskills for the course's learningoutcomes in practiceThe portfolio provides little orno evidence of reflection toincrease learning aligned withthe course learning outcomesfor which credit is being soughtThe portfolio shows little or noevidence of learning bied tosound educational theoryAssembly instructions havenot been followed with criticalportfolio elements not included:the quality of written, visualand/or digital presentation doesnot meet postsecondarystandardsDocumentation and descriptionof learning experiencesrelated to course learningoutcomes are not effectivelyor completely presentedThe portolo materials andartifacts are not fullysupported by or connected tothe courses learning outcomesThe portfolio documents some.but not sufficient learning tiedto sound educational theory(or grounded in appropriateacademic frameworks!2 MeetsexpectationsDocumentation and descriptionof learning experiences relatedto course learning outcomesare appropriate and effectivelypresentedThe portfolio includesappropriate artifacts thatsupport the demonstrationof learning outcomesThe portfolio adequatelydocuments learning tied tosound educational theory (orgrounded in appropriateacademic frameworks!The portfolio demonstrates the The portfolio cocuments thestudent's ability to use theknowledge and skills for thecourse learning outcomes inpractice is limitedThe portfolio providesinadequate evidence ofreflection to increase learningaligned with the course learningoutcomes for which creat isbeing soughtMost of the expected elementsare included the quality ofwritten visual and/or digitalpresentation does not mee:postsecondary stancards withtoo many errors in spellinggrammar and punctuation3ExceedsexpectationsDocumentation anddescription of learningexpenerces related to courselearning outcomes exceedexpectationsThe presentation of artifacts isconvincing with strongsupport for the courseslearning outcomesacquisition of knowledge andskills for the course leamingoutcomes with some ability toapply them in practiceThe portfolio providesevidence of reflection toincrease learning algned withthe course learning outcomesfor which credit is being soughtThe portfolio provides clearevidence of learning bed tosound educational theory forgrounded in appropriateacademic frameworks!The portfolio demonstrates thestudent has mastered theknowledge and skills for thecourse learning outcomes andcan apply them in practiceThe portfolio shows that thestudent has reflected withsubstantial depth upon howthe prior learning experience'saligned to the course learningoutcomes for which credit isbeing soughtThe portfolio is well organizedwith all critical elementsScoreincluced the quality of writtenvisual and or digital thepresentation is competent withminor errors in spelling.grammar and punctuationThe portfolio is well organizedwith all critical elementsincluded learning is well-documented with anting andproduction skills that exceedthose of most college studentspasagot po kailangan ko na po kasi ngayon thank you sa masagot nito.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>hindi po ito ina answer sa mga worksheets. rubic po ito kung paano nila i gra-grade yung portofolio niyo po :)</p><p><strong>Step-by-step explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="learning-task-5-identify-the-word-or-group-of-words-being-described-using-thesuggested-answers-below-evolution-organization-max-weber-japanese-human-skills-scientific-management-theory-tacti">
+                            22. Learning Task 5: Identify the word or group of words being described using thesuggested answers below.Evolution , Organization , Max Weber ,Japanese , Human Skills ,Scientific Management Theory ,Tactical Managers ,General Administrative Theory CEO ,Henry Mintzberg , Manager , Interpersnal1. It is the theory authored by Frederick W. Taylor2. The one who applied TQM in manufacturing their products.3. The German sociologist who wrote about bureaucracy.4. This theory concentrates on the manager's functions and what makes upgood management practice.5. It is usually defined as slow stages of growth and development,6. Demands assigning task, setting side funds, and bringing harmonicrelations among co-workers.7.these enable managers in all levels to relate well with people.8.it also refers to middle levels managers.9.it refers to an individual engaged in management activities 10.according to him,managerial roles are classified into three types.11.example of this includes top level managers in a big organization .12.it refers to one ot the classification of managerial roles composed of leader,liaison,and figurehead.​</h2><br />
+                        Question:<p>A</p><p>Learning Task 5: Identify the word or group of words being described using the</p><p>suggested answers below.</p><p>Evolution</p><p>Organization</p><p>Max Weber</p><p>Japanese</p><p>Human Skills</p><p>Scientific Management Theory</p><p>Tactical Managers</p><p>General Administrative Theory CEO</p><p>Henry Mintzberg</p><p>Manager</p><p>Interpersonal</p><p></p><p>1. It is the theory authored by Frederick W. Taylor</p><p>2. The one who applied TQM in manufacturing their products.</p><p>3. The German sociologist who wrote about bureaucracy.</p><p>4. This theory concentrates on the manager's functions and what makes up</p><p>good management practice.</p><p>5. It is usually defined as slow stages of growth and development,</p><p>6. Demands assigning task, setting side funds, and bringing harmonic</p><p>relations among co-workers.</p><p>7.these enable managers in all levels to relate well with people.</p><p>8.it also refers to middle levels managers.</p><p>9.it refers to an individual engaged in management activities </p><p>10.according to him,managerial roles are classified into three types.</p><p>11.example of this includes top level managers in a big organization .</p><p>12.it refers to one ot the classification of managerial roles composed of leader,liaison,and figurehead.</p><p></p>Answer:<p>1. It is the theory authored by Frederick W. Taylor</p>-Scientific management theory<p>2. The one who applied TQM in manufacturing their products.</p>-Japanese<p>3. The German sociologist who wrote about bureaucracy.</p>-Max Weber<p>4. This theory concentrates on the manager's functions and what makes up</p><p>good management practice.</p>-General administrative theory<p>5. It is usually defined as slow stages of growth and development.</p>-Evolution <p>6. Demands assigning task, setting side funds, and bringing harmonic</p><p>relations among co-workers.</p>-Organization<p>7.these enable managers in all levels to relate well with people.</p>-Human Skills<p>8.it also refers to middle levels managers.</p>-Tractical Managers<p>9.it refers to an individual engaged in management activities.</p>-Manager<p>10.according to him,managerial roles are classified into three types.</p>-Henry Mintzberg<p>11.example of this includes top level managers in a big organization .</p>-CEO<p>12.it refers to one ot the classification of managerial roles composed of leader,liaison,and figurehead.</p>-Interpersonal<p></p><p>hope it helps ૢ(❛◡❛✿)  ૢ</p><br />
+                                            <h2 class="ez-toc-section" id="in-what-way-do-you-think-that-the-implications-of-brain-theories-related-to-personality-and-learning%e2%80%8b">
+                            23. in what way do you think that the implications of brain theories related to personality and learning?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>As the brain matures, more and more fibers grow and the brain becomes increasingly interconnected. These interconnected networks of neurons are very important to the formation of memories and the connection of new learning to previous learning. As neural networks form, the child learns both academically and socially</p><p><strong>Answer:</strong></p><p></p><p>Our personality may be shaped by how our brain works, but in fact the shape of our brain can itself provide surprising clues about how we behave – and our risk of developing mental health As the brain matures, more and more fibers grow and the brain becomes increasingly interconnected. As neural networks form, the child learns both academically and socially.</p><p></p><p>Hope this helps you!</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="introductionlithosphere-consists-of-crust-and-the-upper-portion-of-the-mantle-there-are-two-types-of-crustthe-continental-crust-and-the-oceanic-crust-the-continental-crust-is-thicker-but-less-dense">
+                            24. IntroductionLithosphere consists of crust and the upper portion of the mantle. There are two types of crust,the continental crust and the oceanic crust. The continental crust is thicker but less dense than theoceanic crust. Because of the difference in density, continental crust floats higher than the oceanic crust.The Earth is divided into segments called plates.There are seven relatively large plates and a number of smaller ones, including the Philippine plate.The plates move very slowly but constantly, and this movement is called tectonics; thus the theory ofmoving lithospheric plates is called plate tectonics. Earthquake is a vibration of the Earth due to therapid release of energy and it is the consequences of moving crustal plates which is crucial in studyingplate tectonics.Learning Competency1. Describe and relate the distribution of earthquake epicenters, active volcanoes and major mountain belto Plate Tectonic Theory.a. Describe and relate the distribution of earthquake epicenters to Plate Tectonic Theory.1​</h2><br />
+                        <p><strong>Answer:</strong></p><p>earthquake very dangerous volcanoes rock</p><p><strong>Explanation:</strong></p><p>earthquake is distribution</p><br />
+                                            <h2 class="ez-toc-section" id="whats-more-activity-1-chunking-the-data-create-a-graphic-organizer-to-arrange-the-concepts-you-have-learned-from-this-module-by-topic-follow-the-table-headings-and-place-your-answers-in-the-corresp">
+                            25. What's More Activity 1: CHUNKING THE DATA Create a graphic organizer to arrange the concepts you have learned from this module by topic. Follow the table headings and place your answers in the corresponding box, Description of key terms related to management Concepts related to the types of management Generalizations about a management theory Insights learned from a management value?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Understand the expectations for reading and writing assignments in post-secondary (university, college, institute) courses</p><p>Understand and apply general strategies to complete post-secondary-level reading assignments efficiently and effectively</p><p>Recognize specific types of writing assignments frequently included in post-secondary courses</p><p>Understand and apply general strategies for managing post-secondary-level writing assignments</p><p>Determine specific reading and writing strategies that work best for you individually</p><br />
+                                            <h2 class="ez-toc-section" id="ii-learning-competency-with-code-the-learner-describe-and-relate-the-distribution-of-active-volcanoes-earthquake-epicenters-and-major-mountain-belts-to-plate-tectonic-theory-iii-exercises-activi">
+                            26. II. Learning Competency with Code The learner Describe and relate the distribution of active volcanoes, earthquake epicenters, and major mountain belts to Plate Tectonic Theory III. Exercises / Activities Answer the following questions on a separate sheet of paper. 1. What is the cause of an earthquake? 2. How does a hypocenter differ from an epicenter? 3. How can we locate the epicenter of an earthquake? 4. What are the different measurements used to determine the magnitude of an earthquake? anwer:1.surface wave magnitude2.hypocenter or focus3.body wave4.surface of earthquake ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>Ano ba yan free answer</p><p>Pa brainliest </p><br />
+                                            <h2 class="ez-toc-section" id="paki-answer-naman-po-plsssss-po-talaga-maawa-po-kayo-huhuhu-wag-lang-po-e-copy-paste-sa-google-plsss-po-thankyou-in-your-on-opinion-po-plsss-huhuhuessay-word-limit-i1-what-is-ecology-how-does-it">
+                            27. PAKI ANSWER NAMAN PO  PLSSSSS PO TALAGA MAAWA PO KAYO HUHUHU WAG LANG PO E COPY PASTE SA GOOGLE PLSSS PO THANKYOU IN YOUR ON OPINION PO PLSSS HUHUHUESSAY Word limit: I1 . What is ecology? How does it relate with the concept of socialization? 2. What is socialization? How does it relate to development and adaptation? 3. What are the key assumptions of Bronfenbrenner's ecological theory? 4. Describe the process of socialization in on ecological context 5. Describe how useful the ecological theory is in understanding the role of the teacher and the community in learning of children in schools (sopts)PAKI ANSWER NAMAN PO  PLSSSSS PO TALAGA MAAWA PO KAYO HUHUHU WAG LANG PO E COPY PASTE SA GOOGLE PLSSS PO THANKYOU IN YOUR ON OPINION PO PLSSS HUHUHU​</h2><br />
+                        <p></p>Ecology is the study of how organisms interact with each other and their environment. Socialization is the process by which individuals learn and internalize the norms, values, and beliefs of their culture. These two concepts are related because socialization occurs within an ecological context, which influences the development and behavior of individuals.Socialization is the process by which individuals acquire the knowledge, skills, attitudes, and values that are necessary to function effectively in society. It is closely related to development and adaptation because socialization plays a key role in shaping an individual's personality, beliefs, and behaviors, which in turn affect their ability to adapt to different social contexts.The key assumptions of Bronfenbrenner's ecological theory are that human development is shaped by the interaction between the individual and the environment, and that this interaction occurs at multiple levels, including the microsystem (immediate environment), mesosystem (interactions between different microsystems), exosystem (external environment), and macrosystem (cultural context).The process of socialization in an ecological context involves the interaction between the individual and their immediate environment (microsystem), which includes family, peers, and other social groups. These interactions shape the individual's beliefs, values, and behaviors, and can have a significant impact on their development and adaptation.The ecological theory is useful in understanding the role of the teacher and the community in the learning of children in schools because it recognizes that development occurs within a broader ecological context. Teachers and community members play a critical role in shaping the microsystems in which children are socialized, and can have a significant impact on their academic achievement and social-emotional development. By understanding the ecological factors that influence learning, educators can design more effective interventions and support systems for children.<br />
+                                            <h2 class="ez-toc-section" id="you-have-studied-many-theories-related-to-evolution-today-remember-a-theory-is-a-group-of-ideas-intended-to-explain-something-from-all-that-you-have-learned-construct-your-own-theory-of-evolution">
+                            28. You have studied many theories related to evolution today. Remember, a theory is a group of ideas intended to explain something. From all that you have learned, construct your own theory of evolution. How do you think organisms came about? Be sure to create a name for your theory and make it detailed as possible.Bs ko maka sagot ng tama at magamda Thanks​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong> Theory about the Dinosaurs</strong></p><p><strong>For decades, the prevailing theory about the extinction of the dinosaurs was that an asteroid from the belt between Mars and Jupiter slammed into the planet, causing cataclysmic devastation that wiped out most life on the planet.</strong></p><p></p><p></p><p><strong>Fun fact:</strong></p><p><strong>_________________________________________________________</strong></p><p><strong>Over the years, paleontologists have proposed several theories for this extensive die-off. One early theory was that small mammals ate dinosaur eggs, thereby reducing the dinosaur population until it became unsustainable. Another theory was that dinosaurs' bodies became too big to be operated by their small brains.</strong></p><p></p><p><strong>Hope this helps ^^ #learnwithbrainly</strong></p><br />
+                                            <h2 class="ez-toc-section" id="what-theories-explain-the-relation-of-learning-style-to-academic-achievement">
+                            29. what theories explain the relation of learning style to academic achievement???</h2><br />
+                        <p>hello po...pareho po pala tayo ng agendum, ahm ano po 2 quanti..., quali..., or III...?</p><p><br /></p><p>Dunn and Dunn’s Learning Style Theory</p>
+
+<p>Honey and Mumford’s Learning Style Theory</p>
+
+<p>Vermunt‘s Learning Style Theory, and Allinson and Hayes
+Wholist-Analytics Theory</p><br />
+                                            <h2 class="ez-toc-section" id="what-i-have-learned-an-academic-text-is-a-reading-material-that-provides-information-which-include-concepts-and-theories-that-are-related-to-the-specific-discipline-common-text-includes-introduction">
+                            30. What I Have Learned An academic text is a reading material that provides information which include concepts and theories that are related to the specific discipline. Common text includes introduction, body, and conclusion. On one hand, students who master academic language are more likely to be successful in academic and professional settings, GETTING DEEPER! Lesson:_______________________________________________________________________________________________________________________What I want to say about the lesson: ___________________________________________________________________________________________________________________What I found out:__________________________________________________________________________________________________________________Pa help po​ </h2><br />
+                        <p><strong>Answer:</strong></p><p>pa help po sir or madam pls</p><p></p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/ki9NLJ_E4eo?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>math</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/rectangular-garden-with-triangular-pool.html">Rectangular Garden With Triangular Pool</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/certified-true-copy-of-birth-certificate-sample.html">Certified True Copy Of Birth Certificate Sample</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/256-32-16.html">256 32 16</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/why-do-you-think-some-students-don-t-listen-in-class.html">Why Do You Think Some Students Don t Listen In Class</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/irrigation-project-for-school.html">Irrigation Project For School</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/tip-to-tail-method.html">Tip To Tail Method</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/taboo.html">Taboo</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/boyle-s-law-sample-problem-with-solution-pdf.html">Boyle s Law Sample Problem With Solution Pdf</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/practicality-and-efficiency-in-assessment.html">Practicality And Efficiency In Assessment</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/dumbfounded-meaning-in-tagalog.html">Dumbfounded Meaning In Tagalog</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/most-valuable-parent-certificate.html">Most Valuable Parent Certificate</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/advantage-and-disadvantage-of-extracurricular-activities.html">Advantage And Disadvantage Of Extracurricular Activities</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/8-sequence-structure.html">8 Sequence Structure</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/parable-about-honesty.html">Parable About Honesty</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/plasma-and-bose-einstein-condensate.html">Plasma And Bose Einstein Condensate</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/windmill-caption.html">Windmill Caption</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/how-to-draw-a-punch.html">How To Draw A Punch</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/good-questions-for-extemporaneous-speech.html">Good Questions For Extemporaneous Speech</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/national-flower-of-timor-leste.html">National Flower Of Timor Leste</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/purple-worksheet.html">Purple Worksheet</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://studyph.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://studyph.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://studyph.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://studyph.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://studyph.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/b4/f1/ef/b4f1ef8dfe59b7fa68754094cf6c8e0e.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

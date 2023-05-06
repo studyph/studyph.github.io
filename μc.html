@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>μc - QnA</title>
+    <meta name="description" content="μc, , , , , , , 0, μC/OS-II - YouTube, www.youtube.com, 1280 x 720, jpeg, , 20, μc, QnA" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="μc - QnA" />
+    <meta property="og:description" content="μc, , , , , , , 0, μC/OS-II - YouTube, www.youtube.com, 1280 x 720, jpeg, , 20, μc, QnA" />
+    <meta property="og:site_name" content="QnA" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="μc - QnA" />
+    <meta name="twitter:description" content="μc, , , , , , , 0, μC/OS-II - YouTube, www.youtube.com, 1280 x 720, jpeg, , 20, μc, QnA" />
+    <link rel='stylesheet' id='generate-style-css' href='https://studyph.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://studyph.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://studyph.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://studyph.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://studyph.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://studyph.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://studyph.github.io">Home</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://studyph.github.io" rel="home"> QnA</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">μc</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">51930787</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=%CE%BCc" alt="μc">
+                    </div>
+                    <p></p>
+                    <p>A positive charge of 4 μC exerts a force of 8 N on an unknown charge 20 cm away. The unknown charge is :
+ε0=10-9/36π (F/m)
+Select one:
+a. +44 μC
+b. None of these
+c. 9.5 μC
+d.
++8.8 μC</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-positive-charge-of-4-%ce%bcc-exerts-a-force-of-8-n-on-an-unknown-charge-20-cm-away-the-unknown-charge-is-%ce%b5010-936%cf%80-fmselect-onea-44-%ce%bccb-none-of-thesec-9-5-%ce%bccd">1.
+                                            A positive charge of 4 μC exerts a force of 8 N on an unknown charge 20 cm away. The unknown charge is :
+ε0=10-9/36π (F/m)
+Select one:
+a. +44 μC
+b. None of these
+c. 9.5 μC
+d.
++8.8 μC</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#point-charges-q1-50-%ce%bcc-and-q2-%e2%88%9225-%ce%bcc-are-placed-1-0-m-apart-what-is-the-force-on-a-third-charge-q3-20-%ce%bcc-placed-midway-between-q1-and-q2">2.
+                                            Point charges q1 = 50 μC and q2 = −25 μC are placed 1.0 m apart. What is the force on a third charge q3 = 20 μC placed midway between q1 and q2 ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#three-point-charges-are-placed-at-the-following-points-on-the-x-axis-2-%ce%bcc-at-x-0-3-%ce%bcc-at-x-40-cm-5%ce%bcc-at-x-120-cm-find-the-force-on-the-3-%ce%bcc-chargefind-the-force">3.
+                                            Three point charges are placed at the following points on the x-axis: +2 μC at x = 0, - 3 μC at x = 40 cm, - 5μC at x = 120 cm. 
+Find the force on the - 3 μC charge
+Find the force on the - 5 μC charge</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-point-particle-with-q-8-50-%ce%bcc-and-speed-4-75-kms-is-moving-northward-in-a-region-of-a-vertically-upward-uniform-magnetic-field-of-magnitude-1-25-t">4.
+                                            A point particle with q = 8. 50 μC and speed 4. 75 km/s is moving northward in a region of a vertically upward uniform magnetic field of magnitude 1. 25 T.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-is-the-electric-potential-given-of-0-08m-away-from-a-charge-of-12-%ce%bcc-charge-your-answer-3-points%e2%80%8b">5.
+                                            What is the electric potential given of 0.08m away from a charge of 12 μC charge. Your answer 3 points​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#particles-of-charge-7548and-85-%ce%bcc-are-placed-in-a-line-the-center-one-is-0-35-from-each-of-the-others-calculate-the-net-force-on-the-75-%ce%bcc-charge-due-to-the-other-two">6.
+                                            Particles of charge +75,+48,and -85 μC are placed in a line. The center one is 0.35 from each of the others. Calculate the net force on the +75 μC charge due to the other two.?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#two-point-charges-qa-8-%ce%bcc-and-qb-5-%ce%bcc-are-separated-by-a-distance-r-10-cm-what-is-the-magnitude-of-the-electric-force">7.
+                                            Two-point charges, QA = +8 μC and QB = -5 μC, are separated by a distance r = 10 cm. What is the magnitude of the electric force?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#two-charges-3-%ce%bcc-and-12-%ce%bcc-are-fixed-1-m-apart-with-the-second-one-to-the-right-find-the-magnitude-and-direction-of-the-net-force-on-a-%e2%88%922-nc-charge-when-placed-at-the-following-l">8.
+                                            Two charges +3 μC and +12 μC are fixed 1 m apart, with the second one to the right. Find the magnitude and direction of the net force on a −2-nC charge when placed at the following locations: (a) halfway between the two (b) half a meter to the left of the +3 μC charge (c)half a meter above the +12 μC charge in a direction perpendicular to the line joining the two fixed charges​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#two-point-charges-qa-8-%ce%bcc-and-qb-5-%ce%bcc-are-separated-by-a-distance-r-10-cm-what-is-the-magnitude-of-the-electric-force-the-constant-k-8-988-x-109-nm2c-%e2%80%8b">9.
+                                            Two point charges, QA = +8 μC and QB = -5 μC, are separated by a distance r = 10 cm. What is the magnitude of the electric force? The constant k = 8.988 x 109 Nm2/C.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#three-charges-are-located-at-the-corners-of-an-equilateral-triangle-what-are-the-magnitude-and-direction-of-the-forces-on-q1-9%e2%82%81-4-0-%ce%bcc-20-cm-92-4-0-%ce%bcc-20-cm-20-cm-93-4-0-c">10.
+                                            Three charges are located at the corners of an equilateral triangle, what are the magnitude and direction of the forces on q1? 9₁ - +4.0 μC 20 cm 92 - +4.0 μC 20 cm 20 cm 93 = -4.0 C​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#problem-3what-is-the-magnitude-and-direction-of-the-force-exerted-on-a-3-50-%ce%bcc-charge-by-a-250-nc-electric-field-that-points-due-east%e2%80%8b">11.
+                                            Problem 3What is the magnitude and direction of the force exerted on a 3. 50 μC charge by a 250 N/C electric field that points due east?​.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#three-charges-5-%ce%bcc-4%ce%bcc-and-9-%ce%bcc-are-placed-at-the-vertices-of-an-equilateral-triangle-with-a-side-measuring-15-cm-how-much-force-acts-on-the-9%ce%bcc-charge-due-to-the-other-two">12.
+                                            Three charges (5 μC, 4μC, and -9 μC) are placed at the vertices of an equilateral triangle with a side measuring 15 cm. How much force acts on the -9μC charge due to the other two charges?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#charges-e-and-f-are-situated-4-44-m-apart-what-is-the-magnitude-of-the-electric-charge-of-particle-f-if-particle-e-has-11-2-%ce%bcc-and-their-ue-is-914-j">13.
+                                            Charges E and F are situated 4.44 m apart. What is the magnitude of the electric charge of particle F if particle E has 11.2 μC and their UE is 914 J?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#three-negative-point-charges-lie-along-a-line-with-charges-44-5-000-%ce%bcc-and-22-000-%ce%bcc-and-distance-y-8-0-cm-find-the-electric-field-vector-in-meganewtoncoloumb-this-combination-of-charg">14.
+                                            Three negative point charges lie along a line, with charges 44% 5.000 μC and 22.000 μC, and distance y 8.0 cm. Find the electric field vector (in meganewton/coloumb) this combination of charges produces at point A, which lies x = 6.000cm from perpendicular to the line connecting the three charges.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#how-many-electrons-make-up-a-charge-of-150-%ce%bcc%e2%80%8b">15.
+                                            how many electrons make up a charge of 150 μC?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#two-identical-spheres-carrying-charges-2-%ce%bcc-and-14-%ce%bcc-are-made-to-contact-each-other-and-then-separated-find-the-charge-on-each-sphere-after-separation">16.
+                                            Two identical spheres carrying charges -2 μC and 14 μC are made to contact each other and then separated. Find the charge on each sphere after separation</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#two-balloons-with-charges-of-4-57-%ce%bcc-and-8-32-%ce%bcc-attract-each-other-with-a-force-of-0-0843-newton-determine-the-separation-distance-between-the-two-balloons-%e2%80%8b">17.
+                                            Two balloons with charges of +4.57 μC and -8.32 μC attract each other with a force of 0.0843 Newton. Determine the separation distance between the two balloons. ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-point-charge-of-3-5-%ce%bcc-is-at-the-center-of-a-cubical-surface-70-cm-on-edge-what-is-the-net-electric-flux-through-the-surface">18.
+                                            A point charge of 3.5 μC is at the center of a cubical surface 70 cm on edge. What is the net electric flux through 
+the surface?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#calculate-the-magnitude-of-the-force-between-two-3-60-%ce%bcc-point-charges-9-3-cm-apart">19.
+                                            Calculate the magnitude of the force between two 3.60-μc point charges 9.3 cm apart.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#try-to-solve1-how-many-electrons-make-up-a-charge-of-150-%ce%bcc-2-what-is-the-magnitude-of-the-force-of-a-3-%ce%bcc-charge-exerts-on-a-5-5-%ce%bcc-charge-if-they-are-2-5m-away-3-two-charged-obje">20.
+                                            try to SOLVE1. How many electrons make up a charge of 150 μC? 2. What is the magnitude of the force of a 3 μC charge exerts on a 5.5 μC charge if they are 2.5m away? 3. Two charged objects with a distance of 0.50 m exert an electric force of 1.50 N on each other, What will be force if the objects are separated farther to a distance of 1.5m?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#4-three-charges-q1-10-%ce%bcc-q2-50-%ce%bcc-and-q3-are-separated-as-shown-in-the-figure-what-is-the-electrostatic-charge-of-q3-if-the-net-electrostatic-force-acting-on-q2-is-equal-to-zero">21.
+                                            4. Three charges, Q1= +10 μC, Q2= +50 μC, and Q3 are separated as shown in the figure. What is the electrostatic charge of Q3 if the net electrostatic force acting on Q2 is equal to zero?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#calculate-the-electric-potential-at-0-001-m-from-a-charge-of-2pc-if-there-is-a-124-n-electrostatic-force-between-two-charges-if-the-charges-are-4-%ce%bcc-and-9-%ce%bcc-how-far-apart-are-they-from">22.
+                                            Calculate the electric potential at 0.001 m from a charge of 2pC. 
+if there is a 124 N electrostatic force between two charges. If the charges are 4 μC and 9 μC, how far apart are they from one another?
+Calculate the change in electric potential energy when 5C of charge is moved through a +5V potential difference.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#set-the-charges-to-be-q1-5-%ce%bcc-and-q2-5-%ce%bcc-what-is-the-magnitude-of-the-force-on-q1-by-q2-n-what-is-the-magnitude-of-the-force-on-q2-by-q1-n">23.
+                                            Set the charges to be q1 = 5 μC and q2 = 5 μC What is the magnitude of the force on q1 by q2 ? (N) What is the magnitude of the force on q2 by q1? (N)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#two-point-charges-q1-4-5-%ce%bcc-and-q2-8-5-%ce%bcc-are-initially-very-farapart-they-are-then-brought-together-with-a-final-separation-of-3-5-mm-how-much-work-does-it-take-to-bring-them-togeth">24.
+                                            Two-point charges Q1 = 4.5 μC and Q2 = 8.5 μC are initially very far
+apart. They are then brought together, with a final separation of 3.5 mm.
+How much work does it take to bring them together?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-are-the-electric-field-and-electric-flux-of-a-sphere-with-a-radius-of-0-500-m-and-carries-a-charge-of-1-00-%ce%bcc-at-its-center">25.
+                                            What are the electric field and electric flux of a sphere with a radius of 0.500 m and carries a charge of +1.00 μC at its center?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#how-many-electrons-make-up-a-charge-of-30-0-%ce%bcc">26.
+                                            how many electrons make up a charge of - 30.0 μc</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#problem-set-quiz-3-1-a-small-cork-with-an-excess-charge-of-6-0-%ce%bcc-is-placed-0-12-m-from-another-cork-which-carries-a-charge-of-4-3-%ce%bcc-a-what-is-the-magnitude-of-the-electric-force-b">27.
+                                            PROBLEM SET (Quiz #3) 1. A small cork with an excess charge of +6.0 μC is placed 0.12 m from another cork, which carries a charge of -4.3 μC. a. What is the magnitude of the electric force between the corks? b. Is this force attractive or repulsive? c. How many excess electrons are on the negative cork? d. How many electrons has the positive cork lost?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-particle-with-charge-5-0-%ce%bcc-is-placed-at-the-corner-of-a-cube-the-total-electric-flux-in-n-%c2%b7-m2-c-through-all-sides-of-the-cube-is">28.
+                                            A particle with charge 5.0-μC is placed at the corner of a cube. The total electric flux in N · m2 /C through all sides of the cube is?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#92-two-point-charges-9%e2%82%81-8-%ce%bcc-and-9%e2%82%82-8-%ce%bcc-are-reparated-by-a-distance-r-10-cm-what-is-the-magnitude-of-the-electrostatic-force%e2%80%8b">29.
+                                            92 | Two-point charges, 9₁ = + 8 μC and 9₂ -8 μC, are reparated by a distance r = 10 cm. what is the magnitude of the electrostatic force?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#what-must-be-the-distance-between-point-charge-q%e2%82%8126-0-%ce%bcc-1%ce%bcc1x106-c-and-point-charge-q2-magnitude-of-5-70-47-0-%ce%bcc-for-the-electrostatic-force-between-them-to-have-a-n">30.
+                                            What must be the distance between point charge q₁=26.0 μC (1μC=1x106 C) and point charge q2 magnitude of 5.70 47.0 μC for the electrostatic force between them to have a N? ​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="a-positive-charge-of-4-%ce%bcc-exerts-a-force-of-8-n-on-an-unknown-charge-20-cm-away-the-unknown-charge-is-%ce%b5010-936%cf%80-fmselect-onea-44-%ce%bccb-none-of-thesec-9-5-%ce%bccd">
+                            1. A positive charge of 4 μC exerts a force of 8 N on an unknown charge 20 cm away. The unknown charge is :
+ε0=10-9/36π (F/m)
+Select one:
+a. +44 μC
+b. None of these
+c. 9.5 μC
+d.
++8.8 μC</h2><br />
+                        B. none of these. <br /><br />A posible change could change the future livng <br /><br /><br /><br /><br /><br /><br /><br /><br />#carryonlearning<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="point-charges-q1-50-%ce%bcc-and-q2-%e2%88%9225-%ce%bcc-are-placed-1-0-m-apart-what-is-the-force-on-a-third-charge-q3-20-%ce%bcc-placed-midway-between-q1-and-q2">
+                            2. Point charges q1 = 50 μC and q2 = −25 μC are placed 1.0 m apart. What is the force on a third charge q3 = 20 μC placed midway between q1 and q2 ?</h2><br />
+                        <p><strong>Answer:</strong></p><p>Though the question doesn't state where the charges are in relation to the observer, for the sake of definiteness let's say q1q  </p><p>1
+</p><p>​  </p><p>  is on the left and q2q  </p><p>2
+</p><p>​  </p><p>  is on the right. By the Principle of Superposition of Forces, we know that we can consider each force on q3q  </p><p>3
+</p><p>​  </p><p>  individually and then just add them together (keeping in mind direction).
+</p><p>
+</p><p>From Coulomb's law, we know that the magnitude of the force on q3q  </p><p>3
+</p><p>​  </p><p>  due to q1q  </p><p>1
+</p><p>​  </p><p>  is given by
+</p><p>
+</p><p>F=k∣qq∣r2
+</p><p>F=k  </p><p>r  </p><p>2
+</p><p>  </p><p>∣qq∣
+</p><p>​  </p><p>  </p><p>
+</p><p>In this case, r=0.5r=0.5 m since q3q  </p><p>3
+</p><p>​  </p><p>  is halfway between the two charges. So then
+</p><p>
+</p><p>F=8.988×109((50×10−6)(20×10−6)0.52)=35.95 N
+</p><p>F
+</p><p>​  </p><p>  
+</p><p>=8.988×10  </p><p>9
+</p><p> (  </p><p>0.5  </p><p>2
+</p><p>  </p><p>(50×10  </p><p>−6
+</p><p> )(20×10  </p><p>−6
+</p><p> )
+</p><p>​  </p><p> )
+</p><p>=35.95 N
+</p><p>​  </p><p>  </p><p>
+</p><p>Now let's think about the direction of the force. q1q  </p><p>1
+</p><p>​  </p><p>  is a positive charge and so is q3q  </p><p>3
+</p><p>​  </p><p> . So those two particles will want to repel each other. Since q1q  </p><p>1
+</p><p>​  </p><p>  is on the left, q3q  </p><p>3
+</p><p>​  </p><p>  will feel a force in the positive direction.
+</p><p>
+</p><p>Now let's consider the force due to charge q2q  </p><p>2
+</p><p>​  </p><p> . Again, we use Coulomb's law to get the magnitude.
+</p><p>
+</p><p>F=8.988×109((25×10−6)(20×10−6)0.52)=17.98 N
+</p><p>F
+</p><p>​  </p><p>  
+</p><p>=8.988×10  </p><p>9
+</p><p> (  </p><p>0.5  </p><p>2
+</p><p>  </p><p>(25×10  </p><p>−6
+</p><p> )(20×10  </p><p>−6
+</p><p> )
+</p><p>​  </p><p> )
+</p><p>=17.98 N
+</p><p>​  </p><p>  </p><p>
+</p><p>And this time the charges have opposite sign and so attract each other. Since q2q  </p><p>2
+</p><p>​  </p><p>  is on the right of q3q  </p><p>3
+</p><p>​  </p><p> , the force due to it will also point in the positive direction.
+</p><p>
+</p><p>So the total force is just the sum of the two since they point in the same direction. That is, the force has a magnitude of 35.95+17.98=53.9335.95+17.98=53.93 newtons and points in the direction of q2q  </p><p>2
+</p><p>​  </p><p>  from q3q  </p><p>3
+</p><p>​  </p><p>  (remember we said it was to the right, but the question didn't so all we can say is it's in the q2q  </p><p>2
+</p><p>​  </p><p>  direction)</p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="three-point-charges-are-placed-at-the-following-points-on-the-x-axis-2-%ce%bcc-at-x-0-3-%ce%bcc-at-x-40-cm-5%ce%bcc-at-x-120-cm-find-the-force-on-the-3-%ce%bcc-chargefind-the-force">
+                            3. Three point charges are placed at the following points on the x-axis: +2 μC at x = 0, - 3 μC at x = 40 cm, - 5μC at x = 120 cm. 
+Find the force on the - 3 μC charge
+Find the force on the - 5 μC charge</h2><br />
+                        <p><strong>Answer:</strong></p><p>a. The <strong>force </strong>on the - 3 μC charge is <strong>0.3375 N</strong></p><p>b. The <strong>force </strong>on the - 5 μC charge is <strong>0.0625 N</strong></p><p><strong>Explanation:</strong></p><p>In our case, we are to find the <strong>force of attraction</strong> between charges of different polarities. Here, we are to use Coulomb's Law.</p><p><strong>For the formula, we will use:</strong></p><p>[tex]F= 9x10^{9} \frac{N.m^2}{C^2} (\frac{qq'}{r^2} )[/tex]</p><p>where </p><p>F       is the force of attraction between charges, unit is in Newtons (N)</p><p>q, q'  are the charges, units is in coulombs (C)</p><p>r        is the distance between charges, unit is in meters (m)</p><p><strong>For the given information</strong></p><p>Let us assign for the variables:</p><p>q1 = +2 μC</p><p>q2 = - 3 μC</p><p>q3 = - 5 μC</p><p>r12 = 40 cm = 0.40 m    is the distance between q1 and q2</p><p>r13 = 120 cm = 1.2 m      is the distance between q1 and q3</p><p><strong>Solving the problem</strong></p><p>1. First is to find the force between q1 and q2. Use the formula for force, we have:</p><p>Take note that we take the absolute values of the product between charges.</p><p>[tex]F_{12} = 9x10^{9} \frac{N.m^2}{C^2} (\frac{ qq'}{r^2} )[/tex]</p><p>[tex]F_{12}= 9x10^{9} \frac{N.m^2}{C^2} (\frac{(+2x10^{-6}C)(-3x10^{-6}C)}{(0.40m)^2} )[/tex]</p><p>[tex]F_{12} = 0.3375N[/tex]</p><p>2. Next is to find the force of attraction between q1 and q3. Use again the formula for force, we have:</p><p>[tex]F_{13} = 9x10^{9} \frac{N.m^2}{C^2} (\frac{qq'}{r^2} )[/tex]</p><p>[tex]F_{13} = 9x10^{9} \frac{N.m^2}{C^2} (\frac{(+2x10^{-6)}C) (-5x10^{-6} C)}{(1.2m)^2} )[/tex]</p><p>[tex]F_{13} =0.0625N[/tex]</p><p>Therefore, the force between +2 μC and - 3 μC is <strong>0.3375 N</strong> and the force between +2 μC and - 5 μC  is <strong>0.0625 N</strong>.</p><p>This means that the farther the distance between charges, the lesser the force of attraction.</p><p><strong>To learn more about this topic, just click on the following links:</strong></p>What is charged particles<p>        https://brainly.ph/question/761844</p>How does a body becomes electrically charged?<p>        https://brainly.ph/question/1980817</p>Kinds of force to be attractive or repulsive<p>        https://brainly.ph/question/1444924</p><p><strong>#LetsStudy</strong></p><p></p><p></p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="a-point-particle-with-q-8-50-%ce%bcc-and-speed-4-75-kms-is-moving-northward-in-a-region-of-a-vertically-upward-uniform-magnetic-field-of-magnitude-1-25-t">
+                            4. A point particle with q = 8. 50 μC and speed 4. 75 km/s is moving northward in a region of a vertically upward uniform magnetic field of magnitude 1. 25 T.</h2><br />
+                        MAGNETIC FORCE: 0.050N<p></p>Straight Solution<p>[tex]F=qv*B\\F= (8.50 * 10^{-6} *4650* 1.25) sin(90)\\F= 0.050N[/tex]</p><p><strong>The magnetic force is ineffective.</strong></p><p></p>The magnetic force<p>Other moving charges are influenced by magnetic fields. The magnetic Lorentz force is the force exerted by a magnetic field on a charge q moving with velocity v. It is provided by </p><p><strong>F = qv × B.</strong></p><p></p><p><strong>(Ns/(Cm) = T (Tesla) is the SI unit of B.)</strong></p><p></p>The force F is perpendicular to the magnetic field's direction B.It is also perpendicular to the velocity v's direction.F is parallel to the plane formed by v and B.The Lorentz force F has the magnitude F = qvB sin, where is the smallest angle between the vectors v and B.Sin = 0 and F = 0 if v and B are parallel or anti-parallel to each other. If v and B are perpendicular, sin = 1 and F has the maximum possible magnitude F = qvB.<p>A charge q experiences no force if it moves with uniform velocity v parallel to the direction of a uniform magnetic field B. It continues to move in a straight line parallel to the field with uniform velocity v.</p><p></p><p>Magnetism changes direction of the particle's velocity but not its speed or kinetic energy.</p><p>The combination of these two motions produces a spiral path.</p><p></p><p><strong>Illustration of magnetic field of magnitude</strong></p><p>https://brainly.ph/question/30015443</p><p></p><p>#SPJ1</p><br />
+                                            <h2 class="ez-toc-section" id="what-is-the-electric-potential-given-of-0-08m-away-from-a-charge-of-12-%ce%bcc-charge-your-answer-3-points%e2%80%8b">
+                            5. What is the electric potential given of 0.08m away from a charge of 12 μC charge. Your answer 3 points​</h2><br />
+                        <p><strong>Explanation:</strong></p><p>The electric potential at 0.08m away from a charge of 12 μC can be calculated using the formula:</p><p></p><p>V = kq / r</p><p></p><p>where V is the electric potential, k is the Coulomb's constant (9 x 10^9 N m^2 / C^2), q is the charge in Coulombs, and r is the distance from the charge in meters.</p><p></p><p>Plugging in the values, we get:</p><p></p><p>V = (9 x 10^9 N m^2 / C^2) * (12 x 10^-6 C) / 0.08m</p><p>V = 13500 V</p><p></p><p>Therefore, the electric potential at 0.08m away from a charge of 12 μC is 13500 V.</p><br />
+                                            <h2 class="ez-toc-section" id="particles-of-charge-7548and-85-%ce%bcc-are-placed-in-a-line-the-center-one-is-0-35-from-each-of-the-others-calculate-the-net-force-on-the-75-%ce%bcc-charge-due-to-the-other-two">
+                            6. Particles of charge +75,+48,and -85 μC are placed in a line. The center one is 0.35 from each of the others. Calculate the net force on the +75 μC charge due to the other two.?</h2><br />
+                        <p><strong>Answer:</strong></p><p>The <strong>net force </strong>is <strong>- 147.39 N</strong>.</p><p><strong>Explanation:</strong></p><p>Here, we are to solve for the <strong>net force</strong> on the first charge due to the remaining two charges. We are going to use the concept of <strong>electric force </strong>and will consider the polarities of the charges whether they repel or attract. Electric force is a vector and we consider directions to solve for the net force.</p><p>For the formula, we will use:</p><p>F = k [tex]\frac{q.q'}{r^2}[/tex]</p><p>where</p><p>F               is the electric force, unit is in Newtons, N</p><p>k               is the permittivity constant, 9 x 10⁹ N·m²/C²</p><p>q and q'   are the charges, units are in Coulombs, C</p><p>r               is the separation between charges, unit is in meter, m</p><p><strong>Given information</strong></p><p>q1 = +75 μC</p><p>q2 = +48 μC</p><p>q3 = -85 μC</p><p>r12 = 0.35 m     (let us assume that the given unit in this problem is in meter)</p><p>r13 = 0.7 m</p><p>∑Fx = ?</p><p>Solving the problem</p><p>1. First, let us solve for the electric force between charges  +75μC and +48μC and their separation is 0.35 m, so we have:</p><p>F12 = k [tex]\frac{q.q'}{r^2}[/tex]</p><p>F12 = 9 x 10⁹ N·m²/C² [tex]\frac{(75x10^{-6}C)(48x10^{-6}C)}{(0.35m)^2}[/tex]</p><p><strong>F12 = 264.49 N</strong></p><p>Take note that the charges repels with each other because both of them are positive, therefore +75μC goes to the left or the electric force is said to be negative.</p><p>2. Next, let us solve for the electric force between +75 μC and -85 μC and their separation 0.7 m, so we have:</p><p>F13 = k [tex]\frac{q.q'}{r^2}[/tex]</p><p>F13 = 9 x 10⁹ N·m²/C² [tex]\frac{(75x10^{-6}C)(85x10^{-6}C)}{(0.7m)^2}[/tex]</p><p><strong>F13 = 117.09 N</strong></p><p>Take note that these charges attracts one another because they have different poles. So +75 μC goes to the right in order to be attracted to -85 μC. This time the electric force is positive.</p><p>3. Now, we are ready to solve for the net force. Let us use summation of forces along the horizontal to solve for it, we have:</p><p>∑Fx = F12 + F13</p><p>∑Fx = - 264.49 N  + 117.09 N</p><p><strong>∑Fx = - 147.39 N</strong></p><p>To learn more, just click on the following links:</p>Definition of electric field force<p>        https://brainly.ph/question/761613</p>Direction of electric field<p>       https://brainly.ph/question/1472588</p><p><strong>#LetsStudy</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="two-point-charges-qa-8-%ce%bcc-and-qb-5-%ce%bcc-are-separated-by-a-distance-r-10-cm-what-is-the-magnitude-of-the-electric-force">
+                            7. Two-point charges, QA = +8 μC and QB = -5 μC, are separated by a distance r = 10 cm. What is the magnitude of the electric force?</h2><br />
+                        <p><strong>Answer:</strong></p><p>Write the practices related to sexual behavior you have to be a member of
+</p><p>
+</p><p></p><p><strong>Explanation:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="two-charges-3-%ce%bcc-and-12-%ce%bcc-are-fixed-1-m-apart-with-the-second-one-to-the-right-find-the-magnitude-and-direction-of-the-net-force-on-a-%e2%88%922-nc-charge-when-placed-at-the-following-l">
+                            8. Two charges +3 μC and +12 μC are fixed 1 m apart, with the second one to the right. Find the magnitude and direction of the net force on a −2-nC charge when placed at the following locations: (a) halfway between the two (b) half a meter to the left of the +3 μC charge (c)half a meter above the +12 μC charge in a direction perpendicular to the line joining the two fixed charges​</h2><br />
+                        <p><strong>Answer:</strong></p><p>the net force is-147.39 N.</p><p><strong>Explanation:</strong></p><p>brainliest mo naman plsss</p><br />
+                                            <h2 class="ez-toc-section" id="two-point-charges-qa-8-%ce%bcc-and-qb-5-%ce%bcc-are-separated-by-a-distance-r-10-cm-what-is-the-magnitude-of-the-electric-force-the-constant-k-8-988-x-109-nm2c-%e2%80%8b">
+                            9. Two point charges, QA = +8 μC and QB = -5 μC, are separated by a distance r = 10 cm. What is the magnitude of the electric force? The constant k = 8.988 x 109 Nm2/C.​</h2><br />
+                        <p><strong>Answer:</strong></p><p>[tex]{\huge{\boxed{\mathbb{\purple{»PaBrainliest☟︎︎︎:}}}}}[/tex]</p><p></p><p>[tex]{\huge{\boxed{\mathbb{\purple{thanks:}}}}}[/tex][tex]{\huge{\boxed{\mathbb{\purple{»PaBrainliest☟︎︎︎:}}}}}[/tex]</p><p></p><p>[tex]{\huge{\boxed{\mathbb{\purple{thanks:}}}}}[/tex][tex]{\huge{\boxed{\mathbb{\purple{»PaBrainliest☟︎︎︎:}}}}}[/tex]</p><p></p><p>[tex]{\huge{\boxed{\mathbb{\purple{thanks:}}}}}[/tex]</p><p>[tex]blue{ \rule{1pt}{90000000pt}}\bow[/tex]</p><br />
+                                            <h2 class="ez-toc-section" id="three-charges-are-located-at-the-corners-of-an-equilateral-triangle-what-are-the-magnitude-and-direction-of-the-forces-on-q1-9%e2%82%81-4-0-%ce%bcc-20-cm-92-4-0-%ce%bcc-20-cm-20-cm-93-4-0-c">
+                            10. Three charges are located at the corners of an equilateral triangle, what are the magnitude and direction of the forces on q1? 9₁ - +4.0 μC 20 cm 92 - +4.0 μC 20 cm 20 cm 93 = -4.0 C​</h2><br />
+                        <p><strong>Answer:</strong></p><p>What are the 3 charges in an equilateral triangle?</p><p>Three point charges lie at the vertices of an equilateral triangle as shown. All three charges have the same magnitude, but Charge #1 is positive (+q) and Charges #2 and #3 are negative (–q). If one measured the force on a test charge at all points relative to another charge or charges, an electric field may be mapped.</p><p><strong>Explanation:</strong></p><p>#<strong>Carryonlearning</strong></p><br />
+                                            <h2 class="ez-toc-section" id="problem-3what-is-the-magnitude-and-direction-of-the-force-exerted-on-a-3-50-%ce%bcc-charge-by-a-250-nc-electric-field-that-points-due-east%e2%80%8b">
+                            11. Problem 3What is the magnitude and direction of the force exerted on a 3. 50 μC charge by a 250 N/C electric field that points due east?​.</h2><br />
+                        <p>Answer: multiply all the given numbers</p><p></p><p>Explanation:</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="three-charges-5-%ce%bcc-4%ce%bcc-and-9-%ce%bcc-are-placed-at-the-vertices-of-an-equilateral-triangle-with-a-side-measuring-15-cm-how-much-force-acts-on-the-9%ce%bcc-charge-due-to-the-other-two">
+                            12. Three charges (5 μC, 4μC, and -9 μC) are placed at the vertices of an equilateral triangle with a side measuring 15 cm. How much force acts on the -9μC charge due to the other two charges?</h2><br />
+                        5c4c9c<p>the answer is 3/5</p><p><strong>Explanation:</strong></p><p>the triangle have tree side each side have three vertices</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="charges-e-and-f-are-situated-4-44-m-apart-what-is-the-magnitude-of-the-electric-charge-of-particle-f-if-particle-e-has-11-2-%ce%bcc-and-their-ue-is-914-j">
+                            13. Charges E and F are situated 4.44 m apart. What is the magnitude of the electric charge of particle F if particle E has 11.2 μC and their UE is 914 J?</h2><br />
+                        <p><strong>Answer:</strong></p><p>0.0403 C </p><p><strong>Explanation:</strong></p><p>qD=UE(R) / kqc</p><p>= (914 J)(4.44m) / (9.0 x 10^9)(11.2 x 10^-6)</p><p>= 4,058.16 / 100,800</p><p>=0.0403 C</p><br />
+                                            <h2 class="ez-toc-section" id="three-negative-point-charges-lie-along-a-line-with-charges-44-5-000-%ce%bcc-and-22-000-%ce%bcc-and-distance-y-8-0-cm-find-the-electric-field-vector-in-meganewtoncoloumb-this-combination-of-charg">
+                            14. Three negative point charges lie along a line, with charges 44% 5.000 μC and 22.000 μC, and distance y 8.0 cm. Find the electric field vector (in meganewton/coloumb) this combination of charges produces at point A, which lies x = 6.000cm from perpendicular to the line connecting the three charges.​</h2><br />
+                        <p>To solve this problem, we can use the principle of superposition of electric fields, which states that the total electric field at any point in space is the vector sum of the electric fields produced by each individual charge.</p><p></p><p>First, let's calculate the electric field produced by each charge individually at point A:</p><p></p><p>The electric field produced by the -5.000 μC charge at point A is given by:</p><p>E1 = (k*q1)/r1^2</p><p></p><p>where k is Coulomb's constant (k = 8.99 x 10^9 N*m^2/C^2), q1 is the charge of the -5.000 μC charge (-5.000 x 10^-6 C), and r1 is the distance from the charge to point A (r1 = sqrt[(0.08)^2 + (0.06)^2] = 0.1 m, using the Pythagorean theorem).</p><p></p><p>Plugging in the values, we get:</p><p></p><p>E1 = (8.99 x 10^9 Nm^2/C^2)(-5.000 x 10^-6 C)/(0.1 m)^2</p><p></p><p>E1 = -4.495 x 10^5 N/C (pointing towards the -5.000 μC charge)</p><p></p><p>The electric field produced by the +5.000 μC charge at point A is given by:</p><p>E2 = (k*q2)/r2^2</p><p></p><p>where q2 is the charge of the +5.000 μC charge (5.000 x 10^-6 C), and r2 is the distance from the charge to point A (r2 = sqrt[(0.08)^2 + (0.06)^2] = 0.1 m).</p><p></p><p>Plugging in the values, we get:</p><p></p><p>E2 = (8.99 x 10^9 Nm^2/C^2)(5.000 x 10^-6 C)/(0.1 m)^2</p><p></p><p>E2 = 4.495 x 10^5 N/C (pointing towards the +5.000 μC charge)</p><p></p><p>The electric field produced by the +22.000 μC charge at point A is given by:</p><p>E3 = (k*q3)/r3^2</p><p></p><p>where q3 is the charge of the +22.000 μC charge (22.000 x 10^-6 C), and r3 is the distance from the charge to point A (r3 = sqrt[(0.08)^2 + (0.06-0.08)^2] = 0.1 m).</p><p></p><p>Plugging in the values, we get:</p><p></p><p>E3 = (8.99 x 10^9 Nm^2/C^2)(22.000 x 10^-6 C)/(0.1 m)^2</p><p></p><p>E3 = 1.997 x 10^6 N/C (pointing towards the +22.000 μC charge)</p><p></p><p>Now, we can find the total electric field at point A by adding the three individual electric fields as vectors:</p><p></p><p>E_total = E1 + E2 + E3</p><p></p><p>Using vector addition, we get:</p><p></p><p>E_total = (-4.495 x 10^5 N/C) i + (4.495 x 10^5 N/C) j + (1.997 x 10^6 N/C) i</p><p></p><p>E_total = (-0.4495 i + 0.4495 j + 1.997 i) x 10^6 N/C</p><p></p><p>E_total = (1.5475 i + 0.4495 j) x 10^6 N/C</p><p></p><p>Therefore, the electric field vector at point A is (1.547</p><p></p><p></p><p></p><p></p><p></p><p><strong>Answer:</strong></p><p><strong>0.402 MN/C</strong></p><p><strong>0.402 MN/CE3 = 8.99 x 10^9 * (22.000 x 10^-6 C) / (0.1463 m)^2 * (0.06 m / 0.1463 m)^</strong></p><p><strong>Explanation:</strong></p><p>To solve this problem, we can use Coulomb's law to find the electric field vector produced by each of the three charges at point A, and then sum those vectors to find the net electric field vector at point A.</p><p></p><p>First, we can find the electric field vector produced by each charge using Coulomb's law:</p><p></p><p>For the 44% μC charge:</p><p></p><p>E1 = (1 / (4πε0)) * [(0.44 μC) / (0.08 m)] * (0.06 m / r1^2)</p><p></p><p>where ε0 is the permittivity of free space and r1 is the distance from the charge to point A.</p><p></p><p>For the 5.000 μC charge:</p><p></p><p>E2 = (1 / (4πε0)) * [(5.000 μC) / (0.08 m)] * (0.06 m / r2^2)</p><p></p><p>For the 22.000 μC charge:</p><p></p><p>E3 = (1 / (4πε0)) * [(22.000 μC) / (0.08 m)] * (0.06 m / r3^2)</p><p></p><p>Next, we can find the distances from each charge to point A using the Pythagorean theorem:</p><p></p><p>r1 = √[(0.08 m)^2 + (0.06 m)^2] = 0.1 m</p><p>r2 = √[(0.08 m)^2 + (0.02 m)^2] = 0.0816 m</p><p>r3 = √[(0.08 m)^2 + (0.14 m)^2] = 0.1463 m</p><p></p><p>Now we can plug in the values and solve for each electric field vector:</p><p></p><p>E1 = 8.99 x 10^9 * (0.44 x 10^-6 C) / (0.1 m)^2 * (0.06 m / 0.1 m)^2 = 0.120 MN/C</p><p>E2 = 8.99 x 10^9 * (5.000 x 10^-6 C) / (0.0816 m)^2 * (0.06 m / 0.0816 m)^2 = 0.402 MN/C</p><p>E3 = 8.99 x 10^9 * (22.000 x 10^-6 C) / (0.1463 m)^2 * (0.06 m / 0.1463 m)^</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="how-many-electrons-make-up-a-charge-of-150-%ce%bcc%e2%80%8b">
+                            15. how many electrons make up a charge of 150 μC?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>10.2375^23</p><p><strong>Step-by-step explanation:</strong></p><p>thats what i knowwww</p><br />
+                                            <h2 class="ez-toc-section" id="two-identical-spheres-carrying-charges-2-%ce%bcc-and-14-%ce%bcc-are-made-to-contact-each-other-and-then-separated-find-the-charge-on-each-sphere-after-separation">
+                            16. Two identical spheres carrying charges -2 μC and 14 μC are made to contact each other and then separated. Find the charge on each sphere after separation</h2><br />
+                        <p><strong>Answer:</strong></p><p>hi po dikhhhahvyshysvsohyznsf</p><br />
+                                            <h2 class="ez-toc-section" id="two-balloons-with-charges-of-4-57-%ce%bcc-and-8-32-%ce%bcc-attract-each-other-with-a-force-of-0-0843-newton-determine-the-separation-distance-between-the-two-balloons-%e2%80%8b">
+                            17. Two balloons with charges of +4.57 μC and -8.32 μC attract each other with a force of 0.0843 Newton. Determine the separation distance between the two balloons. ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>-38.0224</p><p><strong>Explanation:</strong></p><p>I'm not sure po correct me if I'm wrong</p><br />
+                                            <h2 class="ez-toc-section" id="a-point-charge-of-3-5-%ce%bcc-is-at-the-center-of-a-cubical-surface-70-cm-on-edge-what-is-the-net-electric-flux-through-the-surface">
+                            18. A point charge of 3.5 μC is at the center of a cubical surface 70 cm on edge. What is the net electric flux through 
+the surface?</h2><br />
+                        <p><strong>Answer:</strong></p><p></p><p> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . , . .. . </p><br />
+                                            <h2 class="ez-toc-section" id="calculate-the-magnitude-of-the-force-between-two-3-60-%ce%bcc-point-charges-9-3-cm-apart">
+                            19. Calculate the magnitude of the force between two 3.60-μc point charges 9.3 cm apart.</h2><br />
+                        <p><strong>The magnitude of the force between two 3.60-μc point charges : </strong><strong>13.486 N</strong></p>Further explanation<p>Every object has an <strong>electric charge
+</strong></p><p>An object is said to be <strong>positively electrically charged</strong> if an object lacks electrons,<strong> electrically negatively charged</strong> if the object is excess electrons and <strong>neutral charged</strong> if the number of positive and negative charge is the same
+</p><p>If two similar electric charges are close together, there will be electrostatic forces <strong>that repel each other, </strong>and if there is different charge, there is an <strong>attraction.
+</strong></p><p>According to Coulomb: the force of attraction between two charged objects is directly proportional to each other's charge and inversely proportional to the square of its distance
+</p><p>Can be formulated
+</p><p>[tex]\rm F=k.\dfrac{q_1\times q_2}{r^2}[/tex]</p><p>
+F = coulomb force (N)
+</p><p>q1, q2 = the charge of each object / particle (C)
+</p><p>r = distance between two charges (m)
+</p><p>k = constant = 9.10⁹ Nm² / C²</p><p>
+</p><p>The force between two 3.60-μc point charges 9.3 cm apart.
+</p><p>then it can be known
+</p><p>q1 = q2 = 3.6 -μc = 3.6.10⁻⁶ C
+</p><p>r = 9.3 cm = 0.093 m
+</p><p>so the Coulomb force</p><p></p><p>[tex]\rm F=9.10^9.\dfrac{(3.6.10^{-6)^2}}{0.093^2}\\\\F=\boxed{\bold{13.486~N}}[/tex]</p><p></p>Learn more<p><strong>Force of Attraction and a Force of Repulsion</strong></p><p><strong>https://brainly.ph/question/2162118</strong></p><p><strong>The magnitude of electrical force</strong></p><p><strong>https://brainly.ph/question/2484031</strong></p><p><strong>Two identical small charged spheres</strong></p><p><strong>https://brainly.ph/question/1449377</strong></p><p><strong></strong></p><p><strong>#LetsStudy</strong></p><p><strong></strong></p><p><strong></strong></p><p><strong>:
+</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="try-to-solve1-how-many-electrons-make-up-a-charge-of-150-%ce%bcc-2-what-is-the-magnitude-of-the-force-of-a-3-%ce%bcc-charge-exerts-on-a-5-5-%ce%bcc-charge-if-they-are-2-5m-away-3-two-charged-obje">
+                            20. try to SOLVE1. How many electrons make up a charge of 150 μC? 2. What is the magnitude of the force of a 3 μC charge exerts on a 5.5 μC charge if they are 2.5m away? 3. Two charged objects with a distance of 0.50 m exert an electric force of 1.50 N on each other, What will be force if the objects are separated farther to a distance of 1.5m?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>The charge of 150 μC is the same as 150 x 10^-6 C. One electron has a charge of -1.602 x 10^-19 C. Therefore, the number of electrons that make up a charge of 150 μC is:</p><p>(150 x 10^-6 C) / (-1.602 x 10^-19 C/electron) = -9.36 x 10^17 electrons</p><p></p><p>Note that the negative sign indicates that the charge is negative.</p><p></p><p>The magnitude of the force F between two charges q1 and q2 separated by a distance r is given by Coulomb's law:</p><p>F = k |q1| |q2| / r^2</p><p></p><p>where k is the Coulomb constant (k = 9 x 10^9 Nm^2/C^2) and |q1| and |q2| are the magnitudes of the charges.</p><p></p><p>In this case, we have q1 = 3 μC = 3 x 10^-6 C and q2 = 5.5 μC = 5.5 x 10^-6 C, and r = 2.5 m. Substituting into Coulomb's law, we get:</p><p></p><p>F = (9 x 10^9 Nm^2/C^2) x (3 x 10^-6 C) x (5.5 x 10^-6 C) / (2.5 m)^2</p><p>= 6.636 x 10^-3 N</p><p></p><p>Therefore, the magnitude of the force is 6.636 x 10^-3 N.</p><p></p><p>The electric force between two charges q1 and q2 separated by a distance r is also given by Coulomb's law. If we increase the distance between the charges from r1 to r2, the force will decrease. The relationship between the force and the distance is an inverse square law, which means that if we triple the distance, the force will decrease by a factor of 9 (3 squared).</p><p>In this case, we have q1 = q2 = unknown, r1 = 0.50 m, and F1 = 1.50 N. If we increase the distance to r2 = 1.5 m, the force F2 will be:</p><p></p><p>F2 = F1 x (r1 / r2)^2</p><p></p><p>Substituting the values, we get:</p><p></p><p>F2 = 1.50 N x (0.50 m / 1.5 m)^2</p><p>= 0.167 N</p><p></p><p>Therefore, the force will be 0.167 N if the objects are separated farther to a distance of 1.5m.</p><p></p><p></p><p></p><p></p><p></p><p></p><p><strong>Answer:</strong></p><p>1. 150 μC is equivalent to 1.5 x 10^-7 C. The charge of an electron is 1.6 x 10^-19 C, so the number of electrons making up a charge of 150 μC is 9.375 x 10^11 electrons. </p><p></p><p>2. The magnitude of the force between two charges q1 and q2 separated by a distance r can be calculated using Coulomb's Law: F = k(q1q2/r^2). In this case, k = 8.99x10^9 Nm²/C², q1 = 3μC = 3x10^-6 C, q2 = 5.5μC = 5.5x10^-6 C and r= 2.5m, so the magnitude of the force is 441 N (or 441N). </p><p></p><p>3. Using Coulomb's Law again: F=k(q1q2/r²), where k=8.99x10⁹ Nm²/C², q1 and q2 are both unknowns but we know that when they are 0 .50 m apart they exert a force of 1 .50 N on each other; therefore F= 1 .50N and r= 0 .50 m; solving for q1 and q2 gives us: </p><p>q1*q2=(8 .99*10⁹)*(0 .50)⁻²*( 1 .50)=7497500 C³ or 7497500 * 10⁻¹⁸ C³; rearranging gives us: </p><p>q₁₂=(7497500 * 10⁻¹⁸) ²√ or 86825000 * 10ˉ³⁷ C; now we can calculate the new force when they are separated by a distance of 1 .5 m using Coulomb's Law again: </p><p>F=(8 .99*10 ⁹)(86825000 * 10ˉ³⁷)/( 1 .5) ² or 0 645N</p><p><strong>Explanation:</strong></p><p>The magnitude of the force between two charges can be calculated using Coulomb's Law. In this case, we know the distance between the charges and the force they exert on each other, so we can use this information to calculate their individual charges. We then use Coulomb's Law again to calculate the new force when they are separated by a different distance.</p><br />
+                                            <h2 class="ez-toc-section" id="4-three-charges-q1-10-%ce%bcc-q2-50-%ce%bcc-and-q3-are-separated-as-shown-in-the-figure-what-is-the-electrostatic-charge-of-q3-if-the-net-electrostatic-force-acting-on-q2-is-equal-to-zero">
+                            21. 4. Three charges, Q1= +10 μC, Q2= +50 μC, and Q3 are separated as shown in the figure. What is the electrostatic charge of Q3 if the net electrostatic force acting on Q2 is equal to zero?​</h2><br />
+                        <p><strong>Answer:</strong></p><p><strong>-5 μC</strong></p><p></p><p><strong>Explanation:</strong></p><p></p><p>To find the charge on Q3, we need to calculate the net electrostatic force acting on Q2 and set it equal to zero. The force between two point charges is given by Coulomb's law:</p><p></p><p>F = k * (Q1 * Q2) / r^2</p><p></p><p>where k is Coulomb's constant, Q1 and Q2 are the magnitudes of the charges, and r is the distance between the charges.</p><p></p><p>Since the net force on Q2 must be zero, the sum of the forces on Q2 due to Q1 and Q3 must add up to zero. Therefore, we can write:</p><p></p><p>k * (Q1 * Q2) / (2r)^2 = k * (Q2 * Q3) / (r)^2</p><p></p><p>Solving for Q3, we find:</p><p></p><p>Q3 = -(Q1 * r^2) / (2 * r^2) = -Q1 / 2 = -10 μC / 2 = -5 μC</p><p></p><p>So, the charge on Q3 is -5 μC.</p><br />
+                                            <h2 class="ez-toc-section" id="calculate-the-electric-potential-at-0-001-m-from-a-charge-of-2pc-if-there-is-a-124-n-electrostatic-force-between-two-charges-if-the-charges-are-4-%ce%bcc-and-9-%ce%bcc-how-far-apart-are-they-from">
+                            22. Calculate the electric potential at 0.001 m from a charge of 2pC. 
+if there is a 124 N electrostatic force between two charges. If the charges are 4 μC and 9 μC, how far apart are they from one another?
+Calculate the change in electric potential energy when 5C of charge is moved through a +5V potential difference.</h2><br />
+                        <p>The electric potential at a point near a charged particle can be calculated using Coulomb's law and the equation for electric potential, which is given by:</p><p></p><p><strong>V = k * q / r</strong></p><p></p><strong>where:</strong><p></p><p>k = Coulomb's constant, 8.99 x 10^9 Nm^2/C^2</p><p>q = the charge of the particle, in this case 2 pC = 2 x 10^-12 C</p><p>r = the distance from the charge, in this case 0.001 m</p><p>So, substituting the values, we get:</p><p></p><p>V = 8.99 x 10^9 Nm^2/C^2 * 2 x 10^-12 C / 0.001 m = 17.98 x 10^3 V</p><p></p><p>Regarding the second question, the force between two charges can be calculated using Coulomb's law:</p><p></p><p>F = k * q1 * q2 / r^2</p><p></p><strong>where:</strong><p></p><p>q1 and q2 are the charges of the two particles, in this case 4 μC and 9 μC, respectively</p><p>r is the distance between the charges</p><p>So, rearranging the equation and substituting the known values, we get:</p><p></p><p>r^2 = k * q1 * q2 / F</p><p></p><p>r = sqrt(k * q1 * q2 / F) = sqrt(8.99 x 10^9 Nm^2/C^2 * 4 x 10^-6 C * 9 x 10^-6 C / 124 N) = 1.34 x 10^-6 m</p><p></p><p>So, the two charges are 1.34 x 10^-6 meters apart from one another.</p><p></p><p>Regarding the third question, the change in electric potential energy can be calculated using the equation:</p><p></p><p>ΔU = q * ΔV</p><p></p><strong>where:</strong><p></p><p>q = the amount of charge being moved, in this case 5 C</p><p>ΔV = the potential difference, in this case +5 V</p><p>So, substituting the values, we get:</p><p></p><p>ΔU = 5 C * 5 V = <strong>25 J</strong></p><p></p><p>The change in electric potential energy is <strong>25 J</strong>.</p><p></p><p><strong>M</strong><strong>a</strong><strong>r</strong><strong>k</strong><strong> </strong><strong>t</strong><strong>h</strong><strong>i</strong><strong>s</strong><strong> </strong><strong>a</strong><strong>s</strong><strong> </strong><strong>a</strong><strong> </strong><strong>B</strong><strong>r</strong><strong>a</strong><strong>i</strong><strong>n</strong><strong>l</strong><strong>i</strong><strong>e</strong><strong>s</strong><strong>t</strong><strong> </strong><strong>i</strong><strong>f</strong><strong> </strong><strong>t</strong><strong>h</strong><strong>i</strong><strong>s</strong><strong> </strong><strong>a</strong><strong>n</strong><strong>s</strong><strong>w</strong><strong>e</strong><strong>r</strong><strong> </strong><strong>i</strong><strong>s</strong><strong> </strong><strong>H</strong><strong>e</strong><strong>l</strong><strong>p</strong><strong>f</strong><strong>u</strong><strong>l</strong><strong>.</strong></p><p><strong>C</strong><strong>o</strong><strong>r</strong><strong>r</strong><strong>e</strong><strong>c</strong><strong>t</strong><strong> </strong><strong>m</strong><strong>e</strong><strong> </strong><strong>i</strong><strong>f</strong><strong> </strong><strong>I'm </strong><strong>w</strong><strong>r</strong><strong>o</strong><strong>n</strong><strong>g</strong><strong>.</strong><strong> </strong><strong>T</strong><strong>h</strong><strong>a</strong><strong>n</strong><strong>k</strong><strong> </strong><strong>y</strong><strong>o</strong><strong>u</strong><strong>!</strong><strong> </strong><strong>(⁠^⁠^⁠)</strong></p><br />
+                                            <h2 class="ez-toc-section" id="set-the-charges-to-be-q1-5-%ce%bcc-and-q2-5-%ce%bcc-what-is-the-magnitude-of-the-force-on-q1-by-q2-n-what-is-the-magnitude-of-the-force-on-q2-by-q1-n">
+                            23. Set the charges to be q1 = 5 μC and q2 = 5 μC What is the magnitude of the force on q1 by q2 ? (N) What is the magnitude of the force on q2 by q1? (N)</h2><br />
+                        <p><strong>Answer:</strong></p><p>the N stands for new and you stands for me coz i like you to 72-#-$-$-$;$($ </p><p><strong>Explanation:</strong></p><p>ambot sa kanding oy naa manay babgs jd ako wala</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="two-point-charges-q1-4-5-%ce%bcc-and-q2-8-5-%ce%bcc-are-initially-very-farapart-they-are-then-brought-together-with-a-final-separation-of-3-5-mm-how-much-work-does-it-take-to-bring-them-togeth">
+                            24. Two-point charges Q1 = 4.5 μC and Q2 = 8.5 μC are initially very far
+apart. They are then brought together, with a final separation of 3.5 mm.
+How much work does it take to bring them together?​</h2><br />
+                        <p>Is the gradual increase in size of the body and its parts.You found a wallet in the tricycle you were riding on. You saw that the wallet</p><p>contained Php500.00. You badly needed the money for your school project. What</p><p>would you do?</p><br />
+                                            <h2 class="ez-toc-section" id="what-are-the-electric-field-and-electric-flux-of-a-sphere-with-a-radius-of-0-500-m-and-carries-a-charge-of-1-00-%ce%bcc-at-its-center">
+                            25. What are the electric field and electric flux of a sphere with a radius of 0.500 m and carries a charge of +1.00 μC at its center?</h2><br />
+                        <p><strong>Answer:</strong></p><p>What are the electric field and electric flux of a sphere with a radius of 0.500 m and carries a charGe of +1.00 uc at its center?2. A long straight wire has a charge per unit length of 3.00 x 10^-12 C/m. At what distance from the wire is the electric field equal to 0.600 N/c.3. How many excess electrons must be added to an isolated spherical conductor 0.100 meters in diameter to produce an electric field of 1800 N/C just outside the surface?4. A closed irregular surface encloses a net charge of 1.50 x 10 C. What is the net electric flux through the surface?5. What must be tge charge of an isolated spherical conductor 30.0 cm in diameter to produce an electric field of 150 N/C just outside the surface<strong>.</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="how-many-electrons-make-up-a-charge-of-30-0-%ce%bcc">
+                            26. how many electrons make up a charge of - 30.0 μc</h2><br />
+                        <p><strong>Answer:</strong></p><p>a micro is 10^-6 or one millionth</p><p>so we are talking about -30 *10^-6 coulombs</p><p></p><p>the charge on the electron is -1.6 *10^-19 Coulombs</p><p></p><p>so N electrons * (-1.6*10^-19 coulombs/1 electron) = -30 *10^-6 coulombs</p><p></p><p>so N = 30 *10^-6 /1.6*10^-19</p><p></p><p>that is (30/1.6) * 10^13</p><p>which is (3/1.6) *10^14</p><p>which is 1.875 * 10^14 electrons</p><br />
+                                            <h2 class="ez-toc-section" id="problem-set-quiz-3-1-a-small-cork-with-an-excess-charge-of-6-0-%ce%bcc-is-placed-0-12-m-from-another-cork-which-carries-a-charge-of-4-3-%ce%bcc-a-what-is-the-magnitude-of-the-electric-force-b">
+                            27. PROBLEM SET (Quiz #3) 1. A small cork with an excess charge of +6.0 μC is placed 0.12 m from another cork, which carries a charge of -4.3 μC. a. What is the magnitude of the electric force between the corks? b. Is this force attractive or repulsive? c. How many excess electrons are on the negative cork? d. How many electrons has the positive cork lost?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>a. The magnitude of the electric force between the corks can be calculated using Coulomb's law:</p><p></p><p>F = k * (q1 * q2) / r^2</p><p></p><p>where F is the electric force, k is Coulomb's constant (8.99 x 10^9 Nm^2/C^2), q1 and q2 are the charges on the corks, and r is the distance between them. Substituting the values given:</p><p></p><p>F = (8.99 x 10^9 Nm^2/C^2) * [(+6.0 x 10^-6 C) * (-4.3 x 10^-6 C)] / (0.12 m)^2</p><p>F = -1.75 x 10^-2 N</p><p></p><p>Therefore, the magnitude of the electric force between the corks is 1.75 x 10^-2 N.</p><p></p><p>b. The force is attractive because the charges on the corks have opposite signs.</p><p></p><p>c. The number of excess electrons on the negative cork can be calculated using the formula:</p><p></p><p>q = n * e</p><p></p><p>where q is the charge on the cork, n is the number of excess electrons, and e is the elementary charge (1.6 x 10^-19 C). Substituting the values given:</p><p></p><p>-4.3 x 10^-6 C = n * (1.6 x 10^-19 C)</p><p>n = -2.69 x 10^13 electrons</p><p></p><p>Therefore, the negative cork has 2.69 x 10^13 excess electrons.</p><p></p><p>d. The number of electrons lost by the positive cork is equal to the number of excess electrons on the negative cork. Therefore:</p><p></p><p>n = +6.0 x 10^-6 C / (1.6 x 10^-19 C)</p><p>n = 3.75 x 10^13 electrons</p><p></p><p>Therefore, the positive cork has lost 3.75 x 10^13 electrons.</p><p><strong>Explanation:</strong></p><p>pa brainlest po salamat</p><br />
+                                            <h2 class="ez-toc-section" id="a-particle-with-charge-5-0-%ce%bcc-is-placed-at-the-corner-of-a-cube-the-total-electric-flux-in-n-%c2%b7-m2-c-through-all-sides-of-the-cube-is">
+                            28. A particle with charge 5.0-μC is placed at the corner of a cube. The total electric flux in N · m2 /C through all sides of the cube is?</h2><br />
+                        <p><strong>Answer:</strong></p><p>Gauss law states that the electric flux through any closed surface is proportional to the net electric charge inside the surface. This is expressed mathematically in the form of:</p><p></p><p>Φ = Q / εo</p><p></p><p>Where,</p><p></p><p>Φ = the electric flux = unknown (which we have to find for)</p><p></p><p>Q = the net electric charge = 5.0 µC = 5 E-6 C</p><p></p><p>εo = the permittivity of free space = a constant value = 8.85 E-12 C^2 / N m^2</p><p></p><p>Plugging in the values into the equation will result in:</p><p></p><p>Φ = 5 E-6 C / (8.85 E-12 C^2 / N m^2)</p><p></p><p>Φ = 564,971.75 Wb = 5.6 x 10^5 Wb </p><p></p><p><strong>Explanation:</strong></p>Disclaimer Warning:<p></p>The answer is not mine CTTO to the real ownerIf you don't really think that my answer is the "REAL" answer, you could just report me:)<p></p><p></p>Thank you hope this help tho:)<p></p>#CARRYONLEARNING #MR.BRAINLYHERETOHELP <p></p><br />
+                                            <h2 class="ez-toc-section" id="92-two-point-charges-9%e2%82%81-8-%ce%bcc-and-9%e2%82%82-8-%ce%bcc-are-reparated-by-a-distance-r-10-cm-what-is-the-magnitude-of-the-electrostatic-force%e2%80%8b">
+                            29. 92 | Two-point charges, 9₁ = + 8 μC and 9₂ -8 μC, are reparated by a distance r = 10 cm. what is the magnitude of the electrostatic force?​</h2><br />
+                        <p><strong>Answer:</strong></p><p>The electrostatic force between two point charges is given by Coulomb's law:</p><p></p><p>F = k * q1 * q2 / r^2</p><p></p><p>where k = 8.99 * 10^9 N m^2 / C^2 is the Coulomb constant, q1 and q2 are the magnitudes of the charges, and r is the distance between the charges.</p><p></p><p>Plugging in the given values, we have:</p><p></p><p>F = 8.99 * 10^9 * 8 * 10^-6 * (-8 * 10^-6) / (10 * 10^-2)^2</p><p></p><p>= 7.19 * 10^-8 N</p><p></p><p>The magnitude of the electrostatic force is 7.19 * 10^-8 N</p><br />
+                                            <h2 class="ez-toc-section" id="what-must-be-the-distance-between-point-charge-q%e2%82%8126-0-%ce%bcc-1%ce%bcc1x106-c-and-point-charge-q2-magnitude-of-5-70-47-0-%ce%bcc-for-the-electrostatic-force-between-them-to-have-a-n">
+                            30. What must be the distance between point charge q₁=26.0 μC (1μC=1x106 C) and point charge q2 magnitude of 5.70 47.0 μC for the electrostatic force between them to have a N? ​</h2><br />
+                        <p><strong>Answer:</strong></p><p>F = (1/4πε₀) * (q₁*q₂/r²)</p><p></p><p>where ε₀ is the electric constant (8.854 x 10^-12 C^2/(N*m^2)).</p><p></p><p>In this case, we are given q₁ = 26.0 μC = 26.0 x 10^-6 C, q₂ = 47.0 μC = 47.0 x 10^-6 C, and F = 1 N. Substituting these values into Coulomb's Law, we get:</p><p></p><p>1 = (1/4πε₀) * (26.0 x 10^-6 C) * (47.0 x 10^-6 C) / r²</p><p></p><p>Solving for r, we get:</p><p></p><p>r = sqrt[(1/4πε₀) * (26.0 x 10^-6 C) * (47.0 x 10^-6 C) / 1] = 3.69 x 10^-3 m</p><p></p><p>Therefore, the distance between the two charges for the electrostatic force between them to be 1 N is approximately 3.69 mm.</p><p><strong>Explanation:</strong></p><p></p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/ga4GCh7dvuc?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>physics</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/36-feet-to-meters.html">36 Feet To Meters</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/300ft-to-meters.html">300ft To Meters</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/linked-traits-punnett-square.html">Linked Traits Punnett Square</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/bus-girl.html">Bus Girl</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/elementaryvideo.html">ElementaryVideo</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/attractive-business-opportunity.html">Attractive Business Opportunity</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/molar-mass-of-cobalt.html">Molar Mass Of Cobalt</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/what-is-the-opposite-of-cancel.html">What Is The Opposite Of Cancel</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/curriculum-planning-examples.html">Curriculum Planning Examples</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/kohlberg-pronunciation.html">Kohlberg Pronunciation</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/identifying-poetic-devices-worksheet.html">Identifying Poetic Devices Worksheet</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/lizard-skeleton.html">Lizard Skeleton</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/golden-rules-of-first-aid.html">Golden Rules Of First Aid</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/one-of-the-following-statements-does-not-describe-qualitative-research.html">One Of The Following Statements Does Not Describe Qualitative Research</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/akrostik-ng-sinopsis.html">Akrostik Ng Sinopsis</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/30-percent-of-40.html">30 Percent Of 40</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/impact-of-laws-of-learning-in-classroom-instruction.html">Impact Of Laws Of Learning In Classroom Instruction</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/prime-factor-of-164.html">Prime Factor Of 164</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/xy-4-expand.html">Xy 4 Expand</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://studyph.github.io/cooperation-vs-competition-in-education.html">Cooperation Vs Competition In Education</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://studyph.github.io"
+                            itemprop="url">QnA</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://studyph.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://studyph.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://studyph.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://studyph.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/b4/f1/ef/b4f1ef8dfe59b7fa68754094cf6c8e0e.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>
